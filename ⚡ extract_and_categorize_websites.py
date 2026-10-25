@@ -329,6 +329,13 @@ def get_channel_info(channel_target=None):
         return "SetupsAI", "@setupsaitony", RAW_DATA_PATH
 
     clean_target = channel_target.strip()
+    safe_target = re.sub(r'[^a-zA-Z0-9_\-]', '', clean_target)
+
+    # Check if local raw cache file already exists
+    possible_cache = os.path.join(PROJECT_DIR, f"💾 raw_{safe_target}_videos.txt")
+    if os.path.exists(possible_cache) and os.path.getsize(possible_cache) > 100:
+        return safe_target, clean_target, possible_cache
+
     if clean_target.startswith('@'):
         url = f"https://www.youtube.com/{clean_target}"
     elif not clean_target.startswith('http'):
@@ -341,9 +348,9 @@ def get_channel_info(channel_target=None):
         cmd_name = ['yt-dlp', '--print', '%(channel)s', '--playlist-items', '1', url]
         res_name = subprocess.run(cmd_name, capture_output=True, text=True, encoding='utf-8', errors='ignore')
         lines = [l.strip() for l in res_name.stdout.splitlines() if l.strip() and not l.startswith('WARNING')]
-        channel_name = lines[-1] if lines else "YouTube_Channel"
+        channel_name = lines[-1] if lines else safe_target
     except Exception:
-        channel_name = "Custom_Channel"
+        channel_name = safe_target
 
     safe_name = re.sub(r'[^a-zA-Z0-9_\-]', '', channel_name)
     if not safe_name:
@@ -376,18 +383,19 @@ def update_readme_catalog():
                         for l in f:
                             if "Total Unique Websites Identified" in l:
                                 m = re.search(r'(\d+)', l)
-                                if m: t_count = m.group(1)
+                                if m: t_count = int(m.group(1))
                             elif "Total Videos / Shorts Scanned" in l or "Total Video Database Scanned" in l:
                                 m = re.search(r'(\d+)', l)
-                                if m: v_count = m.group(1)
+                                if m: v_count = int(m.group(1))
                 except Exception:
                     pass
-            channels.append({
-                "name": c_name,
-                "folder": item,
-                "videos": v_count or "-",
-                "tools": t_count or "-"
-            })
+            if t_count and t_count > 0:
+                channels.append({
+                    "name": c_name,
+                    "folder": item,
+                    "videos": v_count or "-",
+                    "tools": t_count or "-"
+                })
 
     channels.sort(key=lambda x: str(x["name"]))
 
