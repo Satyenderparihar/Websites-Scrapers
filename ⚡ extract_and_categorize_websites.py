@@ -868,6 +868,246 @@ def get_channel_info(channel_target=None):
 
     return safe_name, clean_target, raw_path
 
+def build_master_all_channels_directory():
+    print("\n" + "=" * 60)
+    print("🌐 Building Master All-Channels Consolidated Directory...")
+    print("=" * 60)
+
+    all_websites = {}
+    channel_stats = {}
+    total_scanned_videos = 0
+
+    channel_folders = [d for d in os.listdir(PROJECT_DIR) if os.path.isdir(os.path.join(PROJECT_DIR, d)) and d.startswith("📁 ")]
+
+    for folder_name in channel_folders:
+        ch = folder_name.replace("📁 ", "").strip()
+        json_path = os.path.join(PROJECT_DIR, folder_name, f"💾 {ch}_websites_database.json")
+        if not os.path.exists(json_path):
+            json_path = os.path.join(PROJECT_DIR, f"💾 {ch}_websites_database.json")
+        
+        raw_path = os.path.join(PROJECT_DIR, f"💾 raw_{ch}_videos.txt")
+        vid_count = 0
+        if os.path.exists(raw_path):
+            with open(raw_path, "r", encoding="utf-8", errors="ignore") as rf:
+                vid_count = len([l for l in rf if "|" in l])
+        total_scanned_videos += vid_count
+
+        if not os.path.exists(json_path):
+            continue
+
+        try:
+            with open(json_path, "r", encoding="utf-8") as jf:
+                items = json.load(jf)
+        except Exception:
+            continue
+
+        if not items:
+            continue
+
+        channel_stats[ch] = {
+            "folder": folder_name,
+            "videos": vid_count,
+            "unique_websites": len(items)
+        }
+
+        for item in items:
+            url = item["url"].rstrip("/").lower()
+            if url not in all_websites:
+                all_websites[url] = {
+                    "name": item["name"],
+                    "url": item["url"],
+                    "category": item["category"],
+                    "description": item["description"],
+                    "channels": {ch: item["videos_count"]},
+                    "total_videos": item["videos_count"],
+                    "videos_by_channel": {ch: item["videos"]}
+                }
+            else:
+                entry = all_websites[url]
+                entry["channels"][ch] = item["videos_count"]
+                entry["total_videos"] += item["videos_count"]
+                entry["videos_by_channel"][ch] = item["videos"]
+
+    print(f"📊 Aggregated {len(all_websites)} unique websites across {len(channel_stats)} channels ({total_scanned_videos} total videos).")
+
+    by_category = defaultdict(list)
+    category_counts = defaultdict(int)
+    sorted_websites = sorted(all_websites.values(), key=lambda x: (x["category"], -x["total_videos"], x["name"]))
+
+    for w in sorted_websites:
+        by_category[w["category"]].append(w)
+        category_counts[w["category"]] += 1
+
+    # 1. Master Markdown Report
+    md_lines = [
+        "# 🌐 All Channels Websites & AI Tools Master Directory\n",
+        "> **All-in-One Master Consolidated Report**  ",
+        f"> **Total Channels Included**: {len(channel_stats)} Channels ({', '.join(channel_stats.keys())})  ",
+        f"> **Total Unique Websites (Zero Repeats)**: **{len(all_websites)} Websites** across all channels  ",
+        f"> **Total YouTube Videos / Shorts Scanned**: **{total_scanned_videos} Videos**  ",
+        "> **Links Standard**: 100% Exact Official Website URLs (Zero Google Search Links)  ",
+        "> **Deduplication Standard**: Har website poori directory me sirf **1 baar** aayegi, sabhi channels ke use-cases ek hi jagah list hain.  \n",
+        "## 📺 Channels Overview Table\n",
+        "| Channel Name | Total Videos Scanned | Unique Websites | Dedicated Report | Dedicated Excel |",
+        "| :--- | :---: | :---: | :--- | :--- |"
+    ]
+
+    for ch, stats in sorted(channel_stats.items()):
+        folder_enc = stats["folder"].replace(" ", "%20")
+        md_lines.append(
+            f"| **{ch}** | **{stats['videos']}** | **{stats['unique_websites']}** | "
+            f"[📖 View {ch} Report]({folder_enc}/📝%20{ch}_Websites_Categorized_Report.md) | "
+            f"[📊 Download Excel]({folder_enc}/📊%20{ch}_Websites_Master_List.xlsx) |"
+        )
+
+    md_lines.append("\n---\n")
+    md_lines.append("## 📊 Master Category Breakdown\n")
+    md_lines.append("| Category | Unique Websites Count | Total Video Mentions |")
+    md_lines.append("| :--- | :---: | :---: |")
+
+    for cat, count in sorted(category_counts.items(), key=lambda x: x[1], reverse=True):
+        cat_vids = sum(w["total_videos"] for w in by_category[cat])
+        md_lines.append(f"| {cat} | **{count} websites** | **{cat_vids} video mentions** |")
+
+    md_lines.append("\n---\n")
+
+    for cat in sorted(by_category.keys()):
+        tools = by_category[cat]
+        md_lines.append(f"### {cat} ({len(tools)} Unique Websites)\n")
+        md_lines.append(
+            "| Website Name | Official Website Link | Featured in Channels | Total Videos | Features & Capabilities (Is Website Se Ye Sab Kar Sakte Hain) | Sample Video References |"
+        )
+        md_lines.append("| :--- | :--- | :--- | :---: | :--- | :--- |")
+
+        for t in tools:
+            ch_list_str = "<br>".join([f"• **{c}**: {cnt} vids" for c, cnt in t["channels"].items()])
+            clean_desc = t["description"].replace("|", "-")
+            
+            sample_vids = []
+            for ch_name, v_list in t["videos_by_channel"].items():
+                if v_list:
+                    first_title, first_url = v_list[0]
+                    short_t = re.sub(r'#[a-zA-Z0-9_\-]+', '', first_title).strip()[:20]
+                    sample_vids.append(f"[{ch_name}: {short_t}...]({first_url})")
+            v_ref_str = "<br>".join(sample_vids[:3])
+
+            md_lines.append(
+                f"| **{t['name']}** | [{t['url']}]({t['url']}) | {ch_list_str} | **{t['total_videos']}** | {clean_desc} | {v_ref_str} |"
+            )
+        md_lines.append("\n")
+
+    master_md_content = "\n".join(md_lines)
+    master_md_path = os.path.join(PROJECT_DIR, "📝 All_Channels_Websites_Master_Categorized_Report.md")
+    with open(master_md_path, "w", encoding="utf-8") as f:
+        f.write(master_md_content)
+    print(f"💾 Master All-Channels Markdown saved: {master_md_path}")
+
+    # 2. Master Excel Workbook
+    wb = openpyxl.Workbook()
+    ws_master = wb.active
+    ws_master.title = "All Channels Consolidated"
+
+    header_fill = PatternFill(start_color="1E3A8A", end_color="1E3A8A", fill_type="solid")
+    header_font = Font(name="Segoe UI", size=11, bold=True, color="FFFFFF")
+    data_font = Font(name="Segoe UI", size=10)
+    link_font = Font(name="Segoe UI", size=10, color="2563EB", underline="single")
+    alt_fill = PatternFill(start_color="F8FAFC", end_color="F8FAFC", fill_type="solid")
+    border_side = Side(border_style="thin", color="E2E8F0")
+    thin_border = Border(left=border_side, right=border_side, top=border_side, bottom=border_side)
+
+    headers = [
+        "Category",
+        "Website Name",
+        "Exact Official Website Link",
+        "Featured Channels",
+        "Total Videos Count",
+        "Consolidated Features (Is Website Se Ye Sab Kar Sakte Hain)",
+        "Primary Video Reference Link"
+    ]
+    ws_master.append(headers)
+
+    for col_num in range(1, len(headers) + 1):
+        cell = ws_master.cell(row=1, column=col_num)
+        cell.font = header_font
+        cell.fill = header_fill
+        cell.alignment = Alignment(horizontal="center", vertical="center", wrap_text=True)
+        cell.border = thin_border
+    ws_master.row_dimensions[1].height = 28
+
+    for row_idx, item in enumerate(sorted_websites, 2):
+        ch_str = ", ".join([f"{c} ({cnt})" for c, cnt in item["channels"].items()])
+        first_vid = ""
+        for ch_name, v_list in item["videos_by_channel"].items():
+            if v_list:
+                first_vid = v_list[0][1]
+                break
+
+        row_data = [
+            item["category"],
+            item["name"],
+            item["url"],
+            ch_str,
+            item["total_videos"],
+            item["description"],
+            first_vid
+        ]
+        ws_master.append(row_data)
+
+        fill = alt_fill if row_idx % 2 == 0 else PatternFill(fill_type=None)
+        for col_num in range(1, len(headers) + 1):
+            cell = ws_master.cell(row=row_idx, column=col_num)
+            cell.font = data_font
+            cell.border = thin_border
+            if fill.fill_type:
+                cell.fill = fill
+            cell.alignment = Alignment(vertical="center")
+
+            if col_num in [3, 7] and cell.value and str(cell.value).startswith("http"):
+                cell.font = link_font
+                cell.hyperlink = cell.value
+
+        ws_master.row_dimensions[row_idx].height = 24
+
+    col_widths = [26, 26, 36, 32, 18, 65, 40]
+    for i, w in enumerate(col_widths, 1):
+        ws_master.column_dimensions[get_column_letter(i)].width = w
+
+    # Sheet 2: Channels Summary
+    ws_summary = wb.create_sheet(title="Channels Summary")
+    ws_summary.append(["Channel Name", "Total Videos Scanned", "Unique Websites Identified"])
+    for col_num in range(1, 4):
+        c = ws_summary.cell(row=1, column=col_num)
+        c.font = header_font
+        c.fill = header_fill
+        c.alignment = Alignment(horizontal="center", vertical="center")
+        c.border = thin_border
+    ws_summary.row_dimensions[1].height = 26
+
+    for r_idx, (ch, stats) in enumerate(sorted(channel_stats.items()), 2):
+        ws_summary.append([ch, stats["videos"], stats["unique_websites"]])
+        for col_num in range(1, 4):
+            c = ws_summary.cell(row=r_idx, column=col_num)
+            c.font = data_font
+            c.border = thin_border
+            c.alignment = Alignment(vertical="center", horizontal="center" if col_num > 1 else "left")
+        ws_summary.row_dimensions[r_idx].height = 22
+
+    ws_summary.column_dimensions['A'].width = 30
+    ws_summary.column_dimensions['B'].width = 24
+    ws_summary.column_dimensions['C'].width = 28
+
+    master_excel_path = os.path.join(PROJECT_DIR, "📊 All_Channels_Websites_Master_List.xlsx")
+    wb.save(master_excel_path)
+    print(f"💾 Master All-Channels Excel saved: {master_excel_path}")
+
+    # 3. Master JSON Database
+    master_json_path = os.path.join(PROJECT_DIR, "💾 all_channels_websites_database.json")
+    with open(master_json_path, "w", encoding="utf-8") as jf:
+        json.dump(sorted_websites, jf, ensure_ascii=False, indent=2)
+    print(f"💾 Master All-Channels JSON saved: {master_json_path}")
+
+    return len(all_websites), total_scanned_videos
+
 def update_readme_catalog():
     readme_path = os.path.join(PROJECT_DIR, "README.md")
     channels = []
@@ -903,11 +1143,17 @@ def update_readme_catalog():
 
     readme_lines = [
         "# 🌐 YouTube Websites & AI Tools Directory Scrapers\n",
-        "> **Autonomous 1-Click Multi-Channel Web Tools Scraper & Consolidated Database**  ",
+        "> **Autonomous 1-Click Multi-Channel Web Tools Scraper & Consolidated Master Directory**  ",
         "> Automatically extracts, categorizes, deduplicates, and consolidates every website and AI tool mentioned across YouTube channels into clean Markdown reports, Excel workbooks, and JSON databases.  ",
-        "> **Repository**: [https://github.com/Satyenderparihar/Websites-Scrapers](https://github.com/Satyenderparihar/Websites-Scrapers)\n",
+        "> **GitHub Repository**: [https://github.com/Satyenderparihar/Websites-Scrapers](https://github.com/Satyenderparihar/Websites-Scrapers)\n",
         "---",
-        "\n## 🚀 Live Channels Catalog\n",
+        "\n## 🌟 All-in-One Master Consolidated Directory (All Channels in One File)\n",
+        "> **Ek hi file me sabhi channels ka pura categorized data (Zero Repeats)**:  ",
+        "> - 📖 **[View Master Categorized Report (Markdown)](📝%20All_Channels_Websites_Master_Categorized_Report.md)**  ",
+        "> - 📊 **[Download Master Multi-Sheet Excel Workbook](📊%20All_Channels_Websites_Master_List.xlsx)**  ",
+        "> - 💾 **[View Master JSON Database](💾%20all_channels_websites_database.json)**  ",
+        "\n---",
+        "\n## 🚀 Individual Channels Catalog\n",
         "| Channel | Videos Scanned | Unique Websites | Markdown Report | Excel Workbook | JSON Database |",
         "| :--- | :---: | :---: | :--- | :--- | :--- |"
     ]
@@ -927,15 +1173,16 @@ def update_readme_catalog():
         "\n---\n",
         "## ⚡ Core Features\n",
         "1. **Consolidated Website Directory (Zero Repeats)**: Each website appears exactly ONCE. If a website was featured in multiple videos (e.g. TinyWow, Gamma), all its use cases and features are merged into its comprehensive description.\n",
-        "2. **Exact Official Website URLs**: Every tool is linked directly to its authentic official domain. Zero Google search links.\n",
-        "3. **100% Strict Channel Isolation**: Every channel has its own dedicated directory (`📁 <ChannelName>/`) with pure, unmixed data.\n",
-        "4. **1-Click Auto GitHub Push**: Runs on every scrape, syncing fresh databases and reports directly to GitHub.\n",
-        "5. **Multi-Format Export**: Generates GitHub-flavored Markdown, styled Excel spreadsheets (`.xlsx`), and structured JSON.\n",
+        "2. **All-in-One Master Directory**: Single file (`📝 All_Channels_Websites_Master_Categorized_Report.md`) bringing all channels together in one categorized view.\n",
+        "3. **Exact Official Website URLs**: Every tool is linked directly to its authentic official domain. Zero Google search links.\n",
+        "4. **100% Strict Channel Isolation**: Every channel has its own dedicated directory (`📁 <ChannelName>/`) with pure, unmixed data.\n",
+        "5. **1-Click Auto GitHub Push**: Runs on every scrape, syncing fresh databases and reports directly to GitHub.\n",
+        "6. **Multi-Format Export**: Generates GitHub-flavored Markdown, styled Excel spreadsheets (`.xlsx`), and structured JSON.\n",
         "---\n",
         "## 🛠️ How to Run\n",
-        "1. Double click **`YouTube Websites Extractor.lnk`** on Desktop.\n",
-        "2. Press **Enter** to update default channel (`@setupsaitony`) OR paste any new channel URL.\n",
-        "3. The agent will scrape, categorize, consolidate, and push to GitHub automatically in **1 Click**!"
+        "1. Double click **`YouTube Websites Extractor.lnk`** on Desktop to run the Agent.\n",
+        "2. Double click **`All Channels Websites Master Directory.lnk`** on Desktop to view all websites across all channels in 1 click!\n",
+        "3. Press **Enter** to update default channel (`@setupsaitony`) OR paste any new channel URL."
     ])
 
     with open(readme_path, "w", encoding="utf-8") as f:
@@ -947,8 +1194,13 @@ def sync_to_github(channel_name, tool_count):
     print(f"🚀 Auto-Syncing {channel_name} updates to GitHub...")
     print("=" * 60)
     try:
+        # 1. Build Master All-Channels Directory
+        build_master_all_channels_directory()
+
+        # 2. Update README.md
         update_readme_catalog()
 
+        # 3. Git commit & push
         subprocess.run(["git", "config", "user.name", "Satyenderparihar"], cwd=PROJECT_DIR, capture_output=True)
         subprocess.run(["git", "config", "user.email", "helpingpeople95@gmail.com"], cwd=PROJECT_DIR, capture_output=True)
 
@@ -961,7 +1213,7 @@ def sync_to_github(channel_name, tool_count):
             return
 
         now_str = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-        commit_msg = f"update({channel_name}): consolidated website directory ({tool_count} unique websites) - {now_str}"
+        commit_msg = f"update({channel_name}): consolidated website directory & all-channels master - {now_str}"
         subprocess.run(["git", "commit", "-m", commit_msg], cwd=PROJECT_DIR, check=True)
 
         res_push = subprocess.run(["git", "push", "origin", "main"], cwd=PROJECT_DIR, capture_output=True, text=True)

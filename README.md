@@ -1,12 +1,21 @@
 # 🌐 YouTube Websites & AI Tools Directory Scrapers
 
-> **Autonomous 1-Click Multi-Channel Web Tools Scraper & Consolidated Database**  
+> **Autonomous 1-Click Multi-Channel Web Tools Scraper & Consolidated Master Directory**  
 > Automatically extracts, categorizes, deduplicates, and consolidates every website and AI tool mentioned across YouTube channels into clean Markdown reports, Excel workbooks, and JSON databases.  
-> **Repository**: [https://github.com/Satyenderparihar/Websites-Scrapers](https://github.com/Satyenderparihar/Websites-Scrapers)
+> **GitHub Repository**: [https://github.com/Satyenderparihar/Websites-Scrapers](https://github.com/Satyenderparihar/Websites-Scrapers)
 
 ---
 
-## 🚀 Live Channels Catalog
+## 🌟 All-in-One Master Consolidated Directory (All Channels in One File)
+
+> **Ek hi file me sabhi channels ka pura categorized data (Zero Repeats)**:  
+> - 📖 **[View Master Categorized Report (Markdown)](📝%20All_Channels_Websites_Master_Categorized_Report.md)**  
+> - 📊 **[Download Master Multi-Sheet Excel Workbook](📊%20All_Channels_Websites_Master_List.xlsx)**  
+> - 💾 **[View Master JSON Database](💾%20all_channels_websites_database.json)**  
+
+---
+
+## 🚀 Individual Channels Catalog
 
 | Channel | Videos Scanned | Unique Websites | Markdown Report | Excel Workbook | JSON Database |
 | :--- | :---: | :---: | :--- | :--- | :--- |
@@ -22,20 +31,22 @@
 
 1. **Consolidated Website Directory (Zero Repeats)**: Each website appears exactly ONCE. If a website was featured in multiple videos (e.g. TinyWow, Gamma), all its use cases and features are merged into its comprehensive description.
 
-2. **Exact Official Website URLs**: Every tool is linked directly to its authentic official domain. Zero Google search links.
+2. **All-in-One Master Directory**: Single file (`📝 All_Channels_Websites_Master_Categorized_Report.md`) bringing all channels together in one categorized view.
 
-3. **100% Strict Channel Isolation**: Every channel has its own dedicated directory (`📁 <ChannelName>/`) with pure, unmixed data.
+3. **Exact Official Website URLs**: Every tool is linked directly to its authentic official domain. Zero Google search links.
 
-4. **1-Click Auto GitHub Push**: Runs on every scrape, syncing fresh databases and reports directly to GitHub.
+4. **100% Strict Channel Isolation**: Every channel has its own dedicated directory (`📁 <ChannelName>/`) with pure, unmixed data.
 
-5. **Multi-Format Export**: Generates GitHub-flavored Markdown, styled Excel spreadsheets (`.xlsx`), and structured JSON.
+5. **1-Click Auto GitHub Push**: Runs on every scrape, syncing fresh databases and reports directly to GitHub.
+
+6. **Multi-Format Export**: Generates GitHub-flavored Markdown, styled Excel spreadsheets (`.xlsx`), and structured JSON.
 
 ---
 
 ## 🛠️ How to Run
 
-1. Double click **`YouTube Websites Extractor.lnk`** on Desktop.
+1. Double click **`YouTube Websites Extractor.lnk`** on Desktop to run the Agent.
 
-2. Press **Enter** to update default channel (`@setupsaitony`) OR paste any new channel URL.
+2. Double click **`All Channels Websites Master Directory.lnk`** on Desktop to view all websites across all channels in 1 click!
 
-3. The agent will scrape, categorize, consolidate, and push to GitHub automatically in **1 Click**!
+3. Press **Enter** to update default channel (`@setupsaitony`) OR paste any new channel URL.
