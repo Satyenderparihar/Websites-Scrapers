@@ -1,18 +1,48 @@
 [
   {
-    "name": "Before you drop $600 on headphones",
+    "name": "MuscleWiki",
+    "url": "https://musclewiki.com",
+    "category": "⚡ Productivity & Document Tools",
+    "description": "Is website se ye sab kar sakte hain: Interactive visual body map where you click any muscle to get exercise guides and workout plans. (Channel me kul 3 alag-alag videos me featured)",
+    "videos_count": 3,
+    "videos": [
+      [
+        "Get full workout plans in seconds!",
+        "https://www.youtube.com/shorts/PKCFZ3WJrug"
+      ],
+      [
+        "This tool can help you plan and track your workouts",
+        "https://www.youtube.com/shorts/yIUB35CVtC4"
+      ],
+      [
+        "This website is literally POWERFUL!",
+        "https://www.youtube.com/shorts/4BrGaRYYVfY"
+      ]
+    ]
+  },
+  {
+    "name": "SuperCook",
+    "url": "https://supercook.com",
+    "category": "⚡ Productivity & Document Tools",
+    "description": "Is website se ye sab kar sakte hain: Zero-waste recipe search engine that matches recipes to ingredients you already have at home.",
+    "videos_count": 1,
+    "videos": [
+      [
+        "More variety, less food wastage!! Win win",
+        "https://www.youtube.com/shorts/q9QA9_ichTE"
+      ]
+    ]
+  },
+  {
+    "name": "TinyWow",
     "url": "https://tinywow.com",
     "category": "⚡ Productivity & Document Tools",
-    "description": "Is website se ye sab kar sakte hain: Online productivity utilities: Before you drop $600 on headphones • Online productivity utilities: Is this the worlds smallest PC? • Online productivity utilities: Keychron Q3 Ultra 8K keyboard unboxing • Online productivity utilities: Honor 600 Pro unboxing (Channel me kul 349 alag-alag videos me featured)",
-    "videos_count": 349,
+    "description": "Is website se ye sab kar sakte hain: 200+ free online utility tools: PDF editing/converting/merging, image background removal, file compression, video tools, and AI writing. (Channel me kul 317 alag-alag videos me featured)",
+    "videos_count": 317,
     "videos": [
       [
         "Before you drop $600 on headphones",
         "https://www.youtube.com/shorts/N-6ADl4gkYk"
-      ],
-      [
-        "Is this the worlds smallest PC?",
-        "https://www.youtube.com/shorts/aKkIdMQEiAs"
       ],
       [
         "Keychron Q3 Ultra 8K keyboard unboxing",
@@ -33,10 +63,6 @@
       [
         "I put this keyboard together brick by brick",
         "https://www.youtube.com/shorts/LKRBGl6gDjs"
-      ],
-      [
-        "Adding the Relume MCP server to Claude makes building websites more consistent and cohesive",
-        "https://www.youtube.com/shorts/NseLXXWmPMs"
       ],
       [
         "The new Samsung Galaxy Z Fold 8!",
@@ -95,16 +121,8 @@
         "https://www.youtube.com/shorts/F6W94jPTi8g"
       ],
       [
-        "Build a professional website in 4 easy steps!",
-        "https://www.youtube.com/shorts/n3fKokRjOEw"
-      ],
-      [
         "Check if your content is AI generated in seconds!",
         "https://www.youtube.com/shorts/c1uIhMQsZMk"
-      ],
-      [
-        "Build a Wordpress website in seconds!",
-        "https://www.youtube.com/shorts/PpfGZQCBThk"
       ],
       [
         "Fast food Secret Menus EXPOSED!",
@@ -113,10 +131,6 @@
       [
         "See which car is faster!",
         "https://www.youtube.com/shorts/pWcSRT_STaI"
-      ],
-      [
-        "Build a working game in seconds!",
-        "https://www.youtube.com/shorts/0So7AUrNdic"
       ],
       [
         "You can print these cool 3D models!",
@@ -145,10 +159,6 @@
       [
         "This website has some cool visualisations",
         "https://www.youtube.com/shorts/GJVB1vg6dEE"
-      ],
-      [
-        "This website is great for developers!",
-        "https://www.youtube.com/shorts/wtWJuGGXHAw"
       ],
       [
         "Is this the best compact speaker?",
@@ -203,10 +213,6 @@
         "https://www.youtube.com/shorts/E08ufjUXv3s"
       ],
       [
-        "Get cool animated UI for your projects!",
-        "https://www.youtube.com/shorts/JY0ptu1QNes"
-      ],
-      [
         "Search thousands of free PNGs for your projects!",
         "https://www.youtube.com/shorts/nbyhyUuef7Q"
       ],
@@ -217,10 +223,6 @@
       [
         "Find where you can watch your favourite movies!",
         "https://www.youtube.com/shorts/1_Ss3VWYvBE"
-      ],
-      [
-        "Find roadmaps for your next programming career!",
-        "https://www.youtube.com/shorts/JYyE4AlfQXg"
       ],
       [
         "Use these online tools for free!",
@@ -243,24 +245,12 @@
         "https://www.youtube.com/shorts/XCRhB4d8GYs"
       ],
       [
-        "Find remote jobs from around the world!",
-        "https://www.youtube.com/shorts/CEyfAFcK8zo"
-      ],
-      [
         "Get access to over 100k free PNG images!",
         "https://www.youtube.com/shorts/LaLoUyAqTWc"
       ],
       [
-        "Learn how to make an Iron Man suit at home",
-        "https://www.youtube.com/shorts/mua32nOXNhY"
-      ],
-      [
         "Find millions of manuals online!",
         "https://www.youtube.com/shorts/-0YxAeb_Tqg"
-      ],
-      [
-        "Plan your next gaming PC build with this tool!",
-        "https://www.youtube.com/shorts/JL3MbMEnbUA"
       ],
       [
         "Learn how to stop hackers",
@@ -299,10 +289,6 @@
         "https://www.youtube.com/shorts/bjPA2Gft71E"
       ],
       [
-        "Build an entire website in minutes!",
-        "https://www.youtube.com/shorts/c_cympPemUM"
-      ],
-      [
         "Enjoy this free browser game",
         "https://www.youtube.com/shorts/-847SJ2H8mw"
       ],
@@ -321,10 +307,6 @@
       [
         "Play this game with your friends",
         "https://www.youtube.com/shorts/LVLJOUV77Jk"
-      ],
-      [
-        "Go on a virtual vacation anywhere in the world",
-        "https://www.youtube.com/shorts/Vxcer2dWd84"
       ],
       [
         "Learn how to fix your car",
@@ -379,10 +361,6 @@
         "https://www.youtube.com/shorts/fK1zQK9tnys"
       ],
       [
-        "Explore cities from around the world!",
-        "https://www.youtube.com/shorts/jr8kjKOUHMY"
-      ],
-      [
         "Convert text to speech with realistic voices",
         "https://www.youtube.com/shorts/akNxRhOip30"
       ],
@@ -409,10 +387,6 @@
       [
         "Get recipes for the food you already have at home",
         "https://www.youtube.com/shorts/qvpGyahcy0g"
-      ],
-      [
-        "Useful quick references for programming languages",
-        "https://www.youtube.com/shorts/hAqCumMA5eQ"
       ],
       [
         "3 reasons why this is the best power bank in 2025",
@@ -519,10 +493,6 @@
         "https://www.youtube.com/shorts/3jtDh313DnA"
       ],
       [
-        "Build my new desk with me!",
-        "https://www.youtube.com/shorts/N3KMk0TvDbw"
-      ],
-      [
         "This keyboard is TRANSPARENT",
         "https://www.youtube.com/shorts/J4a9oQGObrk"
       ],
@@ -551,14 +521,6 @@
         "https://www.youtube.com/shorts/9t4WwV9CJWg"
       ],
       [
-        "Adjustable laptop stand with built-in USB hub by Orico",
-        "https://www.youtube.com/shorts/-pVTireIEd8"
-      ],
-      [
-        "Building a Lego keyboard",
-        "https://www.youtube.com/shorts/ZF-7oWJ-IAU"
-      ],
-      [
         "Unboxing and trying the Miyoo Mini Plus retro gaming console",
         "https://www.youtube.com/shorts/Oxl-1-hvgSY"
       ],
@@ -573,10 +535,6 @@
       [
         "Cool tech for under $20",
         "https://www.youtube.com/shorts/e1pzvT0W1UE"
-      ],
-      [
-        "The best sounding stock keyboard",
-        "https://www.youtube.com/shorts/Sk_DRBYkkbI"
       ],
       [
         "This docking station is a must have for laptops!",
@@ -647,10 +605,6 @@
         "https://www.youtube.com/shorts/YDH8zrJmaZU"
       ],
       [
-        "Cant wait to build this LEGO keboard!",
-        "https://www.youtube.com/shorts/7pSpUYW0V5g"
-      ],
-      [
         "This drill is perfect for at home DIY Looks and feels great and has plenty of power!",
         "https://www.youtube.com/shorts/sNNBHLL0EBI"
       ],
@@ -673,10 +627,6 @@
       [
         "Find all the AI tools you need in one place!",
         "https://www.youtube.com/shorts/35KDYMoxFb4"
-      ],
-      [
-        "Sound test at the end of the video! Thanks for sending. I love the thoccy sound",
-        "https://www.youtube.com/shorts/e3X-CW9MAvY"
       ],
       [
         "How far can you drift?",
@@ -723,20 +673,12 @@
         "https://www.youtube.com/shorts/V5gFmKMNEbU"
       ],
       [
-        "Superior build quality thanks for sending this out!",
-        "https://www.youtube.com/shorts/78BUAGYgypA"
-      ],
-      [
         "A bunch of hands playing volleyball",
         "https://www.youtube.com/shorts/A4nauznObIY"
       ],
       [
         "AI generated videos within minutes!",
         "https://www.youtube.com/shorts/UpVwdeNX3u0"
-      ],
-      [
-        "A quick tip for gamers. Record gameplay easily",
-        "https://www.youtube.com/shorts/8dMUiIKGNH8"
       ],
       [
         "This browser is made for gamers. CPU and RAM limiting is goood",
@@ -769,10 +711,6 @@
       [
         "This thing about to take me to space",
         "https://www.youtube.com/shorts/rhuRUcc8wgY"
-      ],
-      [
-        "AI can help you be the best quiz master",
-        "https://www.youtube.com/shorts/K9T27zDFpRU"
       ],
       [
         "How to screenshot on Windows",
@@ -831,10 +769,6 @@
         "https://www.youtube.com/shorts/2L1YUH_7ppU"
       ],
       [
-        "Desktops looking clean",
-        "https://www.youtube.com/shorts/Z5l-SroxGzI"
-      ],
-      [
         "Very useful for planning a new business!",
         "https://www.youtube.com/shorts/On3l6aAovws"
       ],
@@ -871,20 +805,12 @@
         "https://www.youtube.com/shorts/cb24VG8yWSk"
       ],
       [
-        "GoPro Hero 11 unboxing",
-        "https://www.youtube.com/shorts/mGnl28FA4E0"
-      ],
-      [
         "Kerbal Space Program is FREE Games Store",
         "https://www.youtube.com/shorts/UHKwNuToOo4"
       ],
       [
         "Fun multiplayer game for when youre bored!",
         "https://www.youtube.com/shorts/s0CJmucoVdw"
-      ],
-      [
-        "World's BIGGEST Pac-Man!",
-        "https://www.youtube.com/shorts/0DllZ0SA4Hg"
       ],
       [
         "New year, new language",
@@ -955,10 +881,6 @@
         "https://www.youtube.com/shorts/QR-LFDM2hyI"
       ],
       [
-        "Lots of tools to use and completely free! No signups required. Insanely powerful and useful",
-        "https://www.youtube.com/shorts/GuNI7TbEiGE"
-      ],
-      [
         "Play multiplayer Counter Strike from your browser!",
         "https://www.youtube.com/shorts/jIqiHYb3FRA"
       ],
@@ -969,10 +891,6 @@
       [
         "Play some multiplayer Pokemon battles!",
         "https://www.youtube.com/shorts/2aPLJY3STKE"
-      ],
-      [
-        "Create your own ambient sounds for sleeping, relaxing or studying! You can even set a timer!",
-        "https://www.youtube.com/shorts/B7fEckfvj98"
       ],
       [
         "Fun and free multiplayer games!",
@@ -1131,10 +1049,6 @@
         "https://www.youtube.com/shorts/RF8FK2Iz2fk"
       ],
       [
-        "A fun alternative to guitar hero!",
-        "https://www.youtube.com/shorts/GxXuA35lKyM"
-      ],
-      [
         "So many FREE video, audio and PDF tools!",
         "https://www.youtube.com/shorts/-45qufdEEzE"
       ],
@@ -1189,10 +1103,6 @@
       [
         "This is super trippy!",
         "https://www.youtube.com/shorts/JB8OeTESXiQ"
-      ],
-      [
-        "Find your favourite soundtracks",
-        "https://www.youtube.com/shorts/4Hsje-b5JsM"
       ],
       [
         "Fun fps game on your browser",
@@ -1391,50 +1301,12 @@
         "https://www.youtube.com/shorts/jiCQfKbf65w"
       ],
       [
-        "Bored? Use your knowledge for good! Donate rice for people in need",
-        "https://www.youtube.com/shorts/TdFw8_vKrxM"
-      ],
-      [
         "PC tips you need to know!",
         "https://www.youtube.com/shorts/ISVkG1Z-4IU"
       ],
       [
         "Fun website for when youre bored!",
         "https://www.youtube.com/shorts/BQNt7Yzl8yY"
-      ]
-    ]
-  },
-  {
-    "name": "MuscleWiki",
-    "url": "https://musclewiki.com",
-    "category": "⚡ Productivity & Document Tools",
-    "description": "Is website se ye kar sakte hain: Interactive visual body map where you click any muscle to get exercise guides and workout plans. (Channel me kul 3 alag-alag videos me featured)",
-    "videos_count": 3,
-    "videos": [
-      [
-        "Get full workout plans in seconds!",
-        "https://www.youtube.com/shorts/PKCFZ3WJrug"
-      ],
-      [
-        "This tool can help you plan and track your workouts",
-        "https://www.youtube.com/shorts/yIUB35CVtC4"
-      ],
-      [
-        "This website is literally POWERFUL!",
-        "https://www.youtube.com/shorts/4BrGaRYYVfY"
-      ]
-    ]
-  },
-  {
-    "name": "SuperCook",
-    "url": "https://supercook.com",
-    "category": "⚡ Productivity & Document Tools",
-    "description": "Is website se ye kar sakte hain: Zero-waste recipe search engine that matches recipes to ingredients you already have at home.",
-    "videos_count": 1,
-    "videos": [
-      [
-        "More variety, less food wastage!! Win win",
-        "https://www.youtube.com/shorts/q9QA9_ichTE"
       ]
     ]
   },
@@ -1472,19 +1344,99 @@
     ]
   },
   {
-    "name": "Find and buy car parts for any",
+    "name": "Looka AI",
+    "url": "https://looka.com",
+    "category": "🎨 Design, 3D & Graphics",
+    "description": "Is website se ye kar sakte hain: AI-powered logo designer and brand identity generator with complete marketing packages.",
+    "videos_count": 1,
+    "videos": [
+      [
+        "AI generates logos in seconds! RIP logo designers",
+        "https://www.youtube.com/shorts/UzP8KhBI5qE"
+      ]
+    ]
+  },
+  {
+    "name": "MockupBro",
+    "url": "https://mockupbro.com",
+    "category": "🎨 Design, 3D & Graphics",
+    "description": "Is website se ye kar sakte hain: Free online device and product mockup generator with high-resolution instant downloads. (Channel me kul 2 alag-alag videos me featured)",
+    "videos_count": 2,
+    "videos": [
+      [
+        "Create mockups in minutes",
+        "https://www.youtube.com/shorts/tiHtqPN3ui4"
+      ],
+      [
+        "This is new way to design and create mockups",
+        "https://www.youtube.com/shorts/YEyFnLBje9M"
+      ]
+    ]
+  },
+  {
+    "name": "Papercurves",
+    "url": "https://papercurves.com",
+    "category": "🎨 Design, 3D & Graphics",
+    "description": "Is website se ye kar sakte hain: Interactive 3D paper fold and flip animation generator for creative web interfaces.",
+    "videos_count": 1,
+    "videos": [
+      [
+        "Create paper animations in seconds!",
+        "https://www.youtube.com/shorts/RwHjRKG2opI"
+      ]
+    ]
+  },
+  {
+    "name": "Remove.bg",
+    "url": "https://remove.bg",
+    "category": "🎨 Design, 3D & Graphics",
+    "description": "Is website se ye sab kar sakte hain: 1-click automated AI tool to remove image backgrounds with high-precision edge cutout in seconds. (Channel me kul 2 alag-alag videos me featured)",
+    "videos_count": 2,
+    "videos": [
+      [
+        "Remove backgrounds from photos in seconds!",
+        "https://www.youtube.com/shorts/LAyS5YejzKk"
+      ],
+      [
+        "Free tool to remove backgrounds for FREE!",
+        "https://www.youtube.com/shorts/byIJdDUx2is"
+      ]
+    ]
+  },
+  {
+    "name": "Toools.design",
     "url": "https://toools.design",
     "category": "🎨 Design, 3D & Graphics",
-    "description": "Is website se ye sab kar sakte hain: Creative design utility: Find and buy car parts for any vehicle in seconds! • Creative design utility: Edit photos in seconds! • Creative design utility: Find car parts to repair your car! • Creative design utility: Transform your photo to video in seconds! (Channel me kul 261 alag-alag videos me featured)",
-    "videos_count": 261,
+    "description": "Is website se ye sab kar sakte hain: Curated repository of 1,000+ modern design tools, mockups, typography, illustration packs, and UI kits. (Channel me kul 283 alag-alag videos me featured)",
+    "videos_count": 283,
     "videos": [
+      [
+        "Adding the Relume MCP server to Claude makes building websites more consistent and cohesive",
+        "https://www.youtube.com/shorts/NseLXXWmPMs"
+      ],
+      [
+        "Build a professional website in 4 easy steps!",
+        "https://www.youtube.com/shorts/n3fKokRjOEw"
+      ],
       [
         "Find and buy car parts for any vehicle in seconds!",
         "https://www.youtube.com/shorts/fkBn34HO7a0"
       ],
       [
+        "Build a Wordpress website in seconds!",
+        "https://www.youtube.com/shorts/PpfGZQCBThk"
+      ],
+      [
         "Edit photos in seconds!",
         "https://www.youtube.com/shorts/1dk09TRqcRI"
+      ],
+      [
+        "Build a working game in seconds!",
+        "https://www.youtube.com/shorts/0So7AUrNdic"
+      ],
+      [
+        "Build a working app in seconds!",
+        "https://www.youtube.com/shorts/_w_Xo3TBTLU"
       ],
       [
         "Find car parts to repair your car!",
@@ -1499,8 +1451,20 @@
         "https://www.youtube.com/shorts/pm5LZqtXuig"
       ],
       [
+        "Get cool animated UI for your projects!",
+        "https://www.youtube.com/shorts/JY0ptu1QNes"
+      ],
+      [
+        "Learn how to make an Iron Man suit at home",
+        "https://www.youtube.com/shorts/mua32nOXNhY"
+      ],
+      [
         "Draw like an artist with this",
         "https://www.youtube.com/shorts/Uago3988KfA"
+      ],
+      [
+        "Plan your next gaming PC build with this tool!",
+        "https://www.youtube.com/shorts/JL3MbMEnbUA"
       ],
       [
         "Play this Mario Kart style game for free!",
@@ -1515,8 +1479,16 @@
         "https://www.youtube.com/shorts/sc1d1wx4zwI"
       ],
       [
+        "Build an entire website in minutes!",
+        "https://www.youtube.com/shorts/c_cympPemUM"
+      ],
+      [
         "How to easily remove things in photos",
         "https://www.youtube.com/shorts/SzXYcUGv2u4"
+      ],
+      [
+        "Useful quick references for programming languages",
+        "https://www.youtube.com/shorts/hAqCumMA5eQ"
       ],
       [
         "Design your own logo in seconds!",
@@ -2103,6 +2075,10 @@
         "https://www.youtube.com/shorts/OGSKzv1uQmc"
       ],
       [
+        "Build my new desk with me!",
+        "https://www.youtube.com/shorts/N3KMk0TvDbw"
+      ],
+      [
         "Powerful websites you should know (part 107)",
         "https://www.youtube.com/shorts/YANXkfQdm9E"
       ],
@@ -2211,8 +2187,16 @@
         "https://www.youtube.com/shorts/VINZR75oBCc"
       ],
       [
+        "Adjustable laptop stand with built-in USB hub by Orico",
+        "https://www.youtube.com/shorts/-pVTireIEd8"
+      ],
+      [
         "Powerful websites you should know (part 86)",
         "https://www.youtube.com/shorts/qtjDRgdhCow"
+      ],
+      [
+        "Building a Lego keyboard",
+        "https://www.youtube.com/shorts/ZF-7oWJ-IAU"
       ],
       [
         "Powerful websites you should know (part 85)",
@@ -2301,6 +2285,10 @@
       [
         "Cool websites you should know (part 1)",
         "https://www.youtube.com/shorts/k9WaTRUfDkg"
+      ],
+      [
+        "Build a fully functional app in minutes!",
+        "https://www.youtube.com/shorts/TX_nmWJJoOM"
       ],
       [
         "PC tips you need to know (part 37)",
@@ -2479,6 +2467,10 @@
         "https://www.youtube.com/shorts/h4fTdhr2sLM"
       ],
       [
+        "Cant wait to build this LEGO keboard!",
+        "https://www.youtube.com/shorts/7pSpUYW0V5g"
+      ],
+      [
         "Useful tips for your PC (part 2)",
         "https://www.youtube.com/shorts/Lhzm6gFWZf4"
       ],
@@ -2499,8 +2491,24 @@
         "https://www.youtube.com/shorts/S9vMGlVJ6p4"
       ],
       [
+        "Superior build quality thanks for sending this out!",
+        "https://www.youtube.com/shorts/78BUAGYgypA"
+      ],
+      [
+        "A quick tip for gamers. Record gameplay easily",
+        "https://www.youtube.com/shorts/8dMUiIKGNH8"
+      ],
+      [
+        "AI can help you be the best quiz master",
+        "https://www.youtube.com/shorts/K9T27zDFpRU"
+      ],
+      [
         "Reset your Graphics Drivers",
         "https://www.youtube.com/shorts/Oecws2XUcEc"
+      ],
+      [
+        "Desktops looking clean",
+        "https://www.youtube.com/shorts/Z5l-SroxGzI"
       ],
       [
         "A good Canva alternative! Give it a try!",
@@ -2511,6 +2519,10 @@
         "https://www.youtube.com/shorts/PsdlLu2IkHU"
       ],
       [
+        "Lots of tools to use and completely free! No signups required. Insanely powerful and useful",
+        "https://www.youtube.com/shorts/GuNI7TbEiGE"
+      ],
+      [
         "I've searched for some of the best Black Friday deals for PC parts! Don't miss out, link in bio",
         "https://www.youtube.com/shorts/KGT0GqRselQ"
       ],
@@ -2519,77 +2531,25 @@
         "https://www.youtube.com/shorts/gtLuoaS28TA"
       ],
       [
+        "A fun alternative to guitar hero!",
+        "https://www.youtube.com/shorts/GxXuA35lKyM"
+      ],
+      [
         "Free web based editor with Photoshop!",
         "https://www.youtube.com/shorts/4W17EbpdTEM"
-      ]
-    ]
-  },
-  {
-    "name": "Looka AI",
-    "url": "https://looka.com",
-    "category": "🎨 Design, 3D & Graphics",
-    "description": "Is website se ye kar sakte hain: AI-powered logo designer and brand identity generator with complete marketing packages.",
-    "videos_count": 1,
-    "videos": [
-      [
-        "AI generates logos in seconds! RIP logo designers",
-        "https://www.youtube.com/shorts/UzP8KhBI5qE"
-      ]
-    ]
-  },
-  {
-    "name": "MockupBro",
-    "url": "https://mockupbro.com",
-    "category": "🎨 Design, 3D & Graphics",
-    "description": "Is website se ye kar sakte hain: Free online device and product mockup generator with high-resolution instant downloads. (Channel me kul 2 alag-alag videos me featured)",
-    "videos_count": 2,
-    "videos": [
-      [
-        "Create mockups in minutes",
-        "https://www.youtube.com/shorts/tiHtqPN3ui4"
       ],
       [
-        "This is new way to design and create mockups",
-        "https://www.youtube.com/shorts/YEyFnLBje9M"
+        "Bored? Use your knowledge for good! Donate rice for people in need",
+        "https://www.youtube.com/shorts/TdFw8_vKrxM"
       ]
     ]
   },
   {
-    "name": "Papercurves",
-    "url": "https://papercurves.com",
-    "category": "🎨 Design, 3D & Graphics",
-    "description": "Is website se ye kar sakte hain: Interactive 3D paper fold and flip animation generator for creative web interfaces.",
-    "videos_count": 1,
-    "videos": [
-      [
-        "Create paper animations in seconds!",
-        "https://www.youtube.com/shorts/RwHjRKG2opI"
-      ]
-    ]
-  },
-  {
-    "name": "Remove.bg",
-    "url": "https://remove.bg",
-    "category": "🎨 Design, 3D & Graphics",
-    "description": "Is website se ye kar sakte hain: 1-click automated AI tool to remove image backgrounds with high-precision edge cutout. (Channel me kul 2 alag-alag videos me featured)",
-    "videos_count": 2,
-    "videos": [
-      [
-        "Remove backgrounds from photos in seconds!",
-        "https://www.youtube.com/shorts/LAyS5YejzKk"
-      ],
-      [
-        "Free tool to remove backgrounds for FREE!",
-        "https://www.youtube.com/shorts/byIJdDUx2is"
-      ]
-    ]
-  },
-  {
-    "name": "Turn a song into a cinematic m",
+    "name": "Vocal Remover",
     "url": "https://vocalremover.org",
     "category": "🎵 Audio, Voice & Music",
-    "description": "Is website se ye sab kar sakte hain: Audio manipulation: Turn a song into a cinematic music video in seconds! • Audio manipulation: Create a song in seconds! • Audio manipulation: Create songs and music in seconds! • Audio manipulation: Play song trivia with your friends! (Channel me kul 5 alag-alag videos me featured)",
-    "videos_count": 5,
+    "description": "Is website se ye sab kar sakte hain: AI-powered online audio tool that isolates vocals and instrumental tracks for free. (Channel me kul 10 alag-alag videos me featured)",
+    "videos_count": 10,
     "videos": [
       [
         "Turn a song into a cinematic music video in seconds!",
@@ -2604,8 +2564,28 @@
         "https://www.youtube.com/shorts/8wbAlZybZGg"
       ],
       [
+        "The best sounding stock keyboard",
+        "https://www.youtube.com/shorts/Sk_DRBYkkbI"
+      ],
+      [
+        "Sound test at the end of the video! Thanks for sending. I love the thoccy sound",
+        "https://www.youtube.com/shorts/e3X-CW9MAvY"
+      ],
+      [
         "Play song trivia with your friends!",
         "https://www.youtube.com/shorts/sCJaZW-kxIg"
+      ],
+      [
+        "GoPro Hero 11 unboxing",
+        "https://www.youtube.com/shorts/mGnl28FA4E0"
+      ],
+      [
+        "Create your own ambient sounds for sleeping, relaxing or studying! You can even set a timer!",
+        "https://www.youtube.com/shorts/B7fEckfvj98"
+      ],
+      [
+        "Find your favourite soundtracks",
+        "https://www.youtube.com/shorts/4Hsje-b5JsM"
       ],
       [
         "Mash up your favourite songs",
@@ -2614,23 +2594,36 @@
     ]
   },
   {
-    "name": "Apple watch ultra 3 unboxing w",
+    "name": "Framer",
+    "url": "https://framer.com",
+    "category": "💻 Coding & Web Development",
+    "description": "Is website se ye kar sakte hain: AI-powered no-code website builder that creates responsive production-ready sites.",
+    "videos_count": 1,
+    "videos": [
+      [
+        "Design and build a website in minutes!",
+        "https://www.youtube.com/shorts/H2yimEjbagg"
+      ]
+    ]
+  },
+  {
+    "name": "Replit",
     "url": "https://replit.com",
     "category": "💻 Coding & Web Development",
-    "description": "Is website se ye sab kar sakte hain: Development & code features: Apple Watch Ultra 3 unboxing with the Milanese strap • Development & code features: Build a working app in seconds! • Development & code features: Create web and apps designs in seconds! • Development & code features: Learning to code WAS boring this website makes learning coding interactive and fun! (Channel me kul 11 alag-alag videos me featured)",
-    "videos_count": 11,
+    "description": "Is website se ye sab kar sakte hain: Collaborative browser-based IDE, AI code generation, and instant cloud application deployment workspace. (Channel me kul 10 alag-alag videos me featured)",
+    "videos_count": 10,
     "videos": [
       [
         "Apple Watch Ultra 3 unboxing with the Milanese strap",
         "https://www.youtube.com/shorts/Xv2yl3HgOnk"
       ],
       [
-        "Build a working app in seconds!",
-        "https://www.youtube.com/shorts/_w_Xo3TBTLU"
-      ],
-      [
         "Create web and apps designs in seconds!",
         "https://www.youtube.com/shorts/ZS9_CrfGP4w"
+      ],
+      [
+        "This website is great for developers!",
+        "https://www.youtube.com/shorts/wtWJuGGXHAw"
       ],
       [
         "Learning to code WAS boring this website makes learning coding interactive and fun!",
@@ -2639,10 +2632,6 @@
       [
         "Apple Math Notes is going to be a game changer",
         "https://www.youtube.com/shorts/yZ2nbtdKjM8"
-      ],
-      [
-        "Build a fully functional app in minutes!",
-        "https://www.youtube.com/shorts/TX_nmWJJoOM"
       ],
       [
         "Did you know Discord has a secret game? Use the Konami cheat code to activate!",
@@ -2667,23 +2656,10 @@
     ]
   },
   {
-    "name": "Framer",
-    "url": "https://framer.com",
-    "category": "💻 Coding & Web Development",
-    "description": "Is website se ye kar sakte hain: AI-powered no-code website builder that creates responsive production-ready sites.",
-    "videos_count": 1,
-    "videos": [
-      [
-        "Design and build a website in minutes!",
-        "https://www.youtube.com/shorts/H2yimEjbagg"
-      ]
-    ]
-  },
-  {
     "name": "BioDigital Human",
     "url": "https://biodigital.com",
     "category": "📚 Learning, Study & Research",
-    "description": "Is website se ye kar sakte hain: Interactive 3D model of the human anatomy, diseases, and medical treatments.",
+    "description": "Is website se ye sab kar sakte hain: Interactive 3D virtual human anatomy atlas and disease explorer for medical students, healthcare pros, and biology.",
     "videos_count": 1,
     "videos": [
       [
@@ -2693,10 +2669,23 @@
     ]
   },
   {
-    "name": "Wallpapers you need dragon bal",
+    "name": "Coursera",
+    "url": "https://coursera.org",
+    "category": "📚 Learning, Study & Research",
+    "description": "Is website se ye sab kar sakte hain: Global online learning platform offering courses and degrees from top universities like Stanford and Yale.",
+    "videos_count": 1,
+    "videos": [
+      [
+        "Find roadmaps for your next programming career!",
+        "https://www.youtube.com/shorts/JYyE4AlfQXg"
+      ]
+    ]
+  },
+  {
+    "name": "QuillBot",
     "url": "https://quillbot.com",
     "category": "📚 Learning, Study & Research",
-    "description": "Is website se ye sab kar sakte hain: Study & academic utility: Wallpapers you need dragon ball z edition • Study & academic utility: This interactive wallpaper is dope! • Study & academic utility: Wallpapers you need, black and white edition • Study & academic utility: Create AI wallpapers in seconds (Channel me kul 10 alag-alag videos me featured)",
+    "description": "Is website se ye sab kar sakte hain: AI paraphrasing, grammar checking, academic summarization, plagiarism detection, and student thesis writing assistance. (Channel me kul 10 alag-alag videos me featured)",
     "videos_count": 10,
     "videos": [
       [
@@ -2742,6 +2731,47 @@
     ]
   },
   {
+    "name": "EarthCam",
+    "url": "https://earthcam.com",
+    "category": "🗺️ Maps, 3D & Exploration",
+    "description": "Is website se ye sab kar sakte hain: Global network of live streaming webcams providing scenic and landmark views worldwide. (Channel me kul 8 alag-alag videos me featured)",
+    "videos_count": 8,
+    "videos": [
+      [
+        "Is this the worlds smallest PC?",
+        "https://www.youtube.com/shorts/aKkIdMQEiAs"
+      ],
+      [
+        "Travel planning in seconds!",
+        "https://www.youtube.com/shorts/UPoUfOMpTtc"
+      ],
+      [
+        "Find remote jobs from around the world!",
+        "https://www.youtube.com/shorts/CEyfAFcK8zo"
+      ],
+      [
+        "Animate your next travel plan",
+        "https://www.youtube.com/shorts/VnbIj03LDHc"
+      ],
+      [
+        "Go on a virtual vacation anywhere in the world",
+        "https://www.youtube.com/shorts/Vxcer2dWd84"
+      ],
+      [
+        "Explore cities from around the world!",
+        "https://www.youtube.com/shorts/jr8kjKOUHMY"
+      ],
+      [
+        "Charge your tech on the go! Plenty of storage! Ready for travel thanks to",
+        "https://www.youtube.com/shorts/GOYh6kAJh3E"
+      ],
+      [
+        "World's BIGGEST Pac-Man!",
+        "https://www.youtube.com/shorts/0DllZ0SA4Hg"
+      ]
+    ]
+  },
+  {
     "name": "Flightradar24",
     "url": "https://flightradar24.com",
     "category": "🗺️ Maps, 3D & Exploration",
@@ -2768,73 +2798,15 @@
     ]
   },
   {
-    "name": "Travel planning in seconds!",
-    "url": "https://earthcam.com",
-    "category": "🗺️ Maps, 3D & Exploration",
-    "description": "Is website se ye sab kar sakte hain: Interactive map & location views: Travel planning in seconds! • Interactive map & location views: Animate your next travel plan • Interactive map & location views: Charge your tech on the go! Plenty of storage! Ready for travel thanks to (Channel me kul 3 alag-alag videos me featured)",
-    "videos_count": 3,
-    "videos": [
-      [
-        "Travel planning in seconds!",
-        "https://www.youtube.com/shorts/UPoUfOMpTtc"
-      ],
-      [
-        "Animate your next travel plan",
-        "https://www.youtube.com/shorts/VnbIj03LDHc"
-      ],
-      [
-        "Charge your tech on the go! Plenty of storage! Ready for travel thanks to",
-        "https://www.youtube.com/shorts/GOYh6kAJh3E"
-      ]
-    ]
-  },
-  {
-    "name": "Predis.ai",
-    "url": "https://predis.ai",
+    "name": "ChatGPT",
+    "url": "https://chatgpt.com",
     "category": "🤖 AI & Machine Learning Tools",
-    "description": "Is website se ye kar sakte hain: Online web application: Predis.ai (Channel me kul 2 alag-alag videos me featured)",
-    "videos_count": 2,
+    "description": "Is website se ye sab kar sakte hain: Conversational AI assistant by OpenAI for answering questions, coding, research, writing, and problem solving. (Channel me kul 7 alag-alag videos me featured)",
+    "videos_count": 7,
     "videos": [
-      [
-        "Marketers will love Predis.ai! Analyse your competitors social posts for free. Link in bio",
-        "https://www.youtube.com/shorts/0pwRucBrg9Y"
-      ],
-      [
-        "ChatGPT + Canva + Hootsuite = predis.ai. Automate social posts with AI",
-        "https://www.youtube.com/shorts/1sjByy6JxOw"
-      ]
-    ]
-  },
-  {
-    "name": "This bottle is self cleaning!",
-    "url": "https://toolify.ai",
-    "category": "🤖 AI & Machine Learning Tools",
-    "description": "Is website se ye sab kar sakte hain: AI features: This bottle is self cleaning! • AI features: Generate videos from a prompt in seconds! • AI features: This is like ChatGPT but stealth?! • AI features: This bottle purifies and filters your water (Channel me kul 19 alag-alag videos me featured)",
-    "videos_count": 19,
-    "videos": [
-      [
-        "This bottle is self cleaning!",
-        "https://www.youtube.com/shorts/IslF7Oh5Jio"
-      ],
-      [
-        "Generate videos from a prompt in seconds!",
-        "https://www.youtube.com/shorts/QSk0bLwQsno"
-      ],
       [
         "This is like ChatGPT but stealth?!",
         "https://www.youtube.com/shorts/DpvkjUEtruM"
-      ],
-      [
-        "This bottle purifies and filters your water",
-        "https://www.youtube.com/shorts/DlwBcgZ7tZo"
-      ],
-      [
-        "Self cleaning water bottle!",
-        "https://www.youtube.com/shorts/nFJDt1mUELg"
-      ],
-      [
-        "The most high tech water bottle ever!",
-        "https://www.youtube.com/shorts/6SFhGjAph58"
       ],
       [
         "How to use ChatGPT 4 for FREE",
@@ -2847,6 +2819,60 @@
       [
         "Best of both worlds! ChatGPT and Google search results",
         "https://www.youtube.com/shorts/q9rsosE0mMI"
+      ],
+      [
+        "ChatGPT + Canva + Hootsuite = predis.ai. Automate social posts with AI",
+        "https://www.youtube.com/shorts/1sjByy6JxOw"
+      ],
+      [
+        "ChatGPT turns your leftovers into a meal. Legit.",
+        "https://www.youtube.com/shorts/KTJLb8XgwEU"
+      ],
+      [
+        "ChatGPT codes game in less than 10 seconds. Absolutely mind blowing!",
+        "https://www.youtube.com/shorts/UYwCi5LWc6g"
+      ]
+    ]
+  },
+  {
+    "name": "Predis.ai",
+    "url": "https://predis.ai",
+    "category": "🤖 AI & Machine Learning Tools",
+    "description": "Is website se ye kar sakte hain: Online web application: Predis.ai",
+    "videos_count": 1,
+    "videos": [
+      [
+        "Marketers will love Predis.ai! Analyse your competitors social posts for free. Link in bio",
+        "https://www.youtube.com/shorts/0pwRucBrg9Y"
+      ]
+    ]
+  },
+  {
+    "name": "Toolify.ai",
+    "url": "https://toolify.ai",
+    "category": "🤖 AI & Machine Learning Tools",
+    "description": "Is website se ye sab kar sakte hain: Comprehensive global directory and discovery engine indexing 10,000+ AI software tools, models, and apps updated daily. (Channel me kul 13 alag-alag videos me featured)",
+    "videos_count": 13,
+    "videos": [
+      [
+        "This bottle is self cleaning!",
+        "https://www.youtube.com/shorts/IslF7Oh5Jio"
+      ],
+      [
+        "Generate videos from a prompt in seconds!",
+        "https://www.youtube.com/shorts/QSk0bLwQsno"
+      ],
+      [
+        "This bottle purifies and filters your water",
+        "https://www.youtube.com/shorts/DlwBcgZ7tZo"
+      ],
+      [
+        "Self cleaning water bottle!",
+        "https://www.youtube.com/shorts/nFJDt1mUELg"
+      ],
+      [
+        "The most high tech water bottle ever!",
+        "https://www.youtube.com/shorts/6SFhGjAph58"
       ],
       [
         "Let AI help you design your house!",
@@ -2871,14 +2897,6 @@
       [
         "Find out what you look like as a cartoon character!",
         "https://www.youtube.com/shorts/JvEIKPrNcrc"
-      ],
-      [
-        "ChatGPT turns your leftovers into a meal. Legit.",
-        "https://www.youtube.com/shorts/KTJLb8XgwEU"
-      ],
-      [
-        "ChatGPT codes game in less than 10 seconds. Absolutely mind blowing!",
-        "https://www.youtube.com/shorts/UYwCi5LWc6g"
       ],
       [
         "This actually works like magic!",
