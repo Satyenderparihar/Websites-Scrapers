@@ -45,6 +45,370 @@ KNOWN_MENTIONS = {
     'coze': ('Coze AI', 'https://coze.com', '🤖 AI & Machine Learning Tools', 'Next-gen AI chatbot and workflow builder powered by GPT-4 and Claude.'),
 }
 
+# Canonical Master Entries for Clean Branding & Exhaustive Descriptions
+CANONICAL_ENTRIES = {
+    "tinywow.com": {
+        "name": "TinyWow",
+        "url": "https://tinywow.com",
+        "category": "⚡ Productivity & Document Tools",
+        "description": "200+ free online utility tools: PDF editing/converting/merging, image background removal, file compression, video tools, and AI writing."
+    },
+    "quillbot.com": {
+        "name": "QuillBot",
+        "url": "https://quillbot.com",
+        "category": "📚 Learning, Study & Research",
+        "description": "AI paraphrasing, grammar checking, academic summarization, plagiarism detection, and student thesis writing assistance."
+    },
+    "toolify.ai": {
+        "name": "Toolify.ai",
+        "url": "https://toolify.ai",
+        "category": "🤖 AI & Machine Learning Tools",
+        "description": "Comprehensive global directory and discovery engine indexing 10,000+ AI software tools, models, and apps updated daily."
+    },
+    "toools.design": {
+        "name": "Toools.design",
+        "url": "https://toools.design",
+        "category": "🎨 Design, 3D & Graphics",
+        "description": "Curated repository of 1,000+ modern design tools, mockups, typography, illustration packs, and UI kits."
+    },
+    "replit.com": {
+        "name": "Replit",
+        "url": "https://replit.com",
+        "category": "💻 Coding & Web Development",
+        "description": "Collaborative browser-based IDE, AI code generation, and instant cloud application deployment workspace."
+    },
+    "chatgpt.com": {
+        "name": "ChatGPT",
+        "url": "https://chatgpt.com",
+        "category": "🤖 AI & Machine Learning Tools",
+        "description": "Conversational AI assistant by OpenAI for answering questions, coding, research, writing, and problem solving."
+    },
+    "gemini.google.com": {
+        "name": "Google Gemini",
+        "url": "https://gemini.google.com",
+        "category": "🤖 AI & Machine Learning Tools",
+        "description": "Multimodal conversational AI model by Google for advanced reasoning, coding, search, and Google Workspace integration."
+    },
+    "perplexity.ai": {
+        "name": "Perplexity AI",
+        "url": "https://perplexity.ai",
+        "category": "🤖 AI & Machine Learning Tools",
+        "description": "Conversational AI search engine delivering verified answers with real-time web citations and academic research papers."
+    },
+    "gamma.app": {
+        "name": "Gamma App",
+        "url": "https://gamma.app",
+        "category": "⚡ Productivity & Document Tools",
+        "description": "AI-powered presentation, document, and webpage builder that generates styled interactive slide decks from prompts in seconds."
+    },
+    "notebooklm.google.com": {
+        "name": "NotebookLM by Google",
+        "url": "https://notebooklm.google.com",
+        "category": "🤖 AI & Machine Learning Tools",
+        "description": "Personalized AI research assistant that turns notes, lecture PDFs, and documents into interactive audio discussions and podcasts."
+    },
+    "v0.dev": {
+        "name": "v0 by Vercel",
+        "url": "https://v0.dev",
+        "category": "💻 Coding & Web Development",
+        "description": "AI prompt-to-app generator that turns natural language UI ideas and sketches into production-ready React/Tailwind code."
+    },
+    "distrosea.com": {
+        "name": "DistroSea",
+        "url": "https://distrosea.com",
+        "category": "💻 Coding & Web Development",
+        "description": "Run and test drive dozens of popular Linux distributions live inside your web browser without downloading ISOs or installing anything."
+    },
+    "monkeytype.com": {
+        "name": "Monkeytype",
+        "url": "https://monkeytype.com",
+        "category": "⚡ Productivity & Document Tools",
+        "description": "Customizable, minimalistic typing test platform with comprehensive speed statistics, accuracy tracking, and custom practice modes."
+    },
+    "obsidian.md": {
+        "name": "Obsidian",
+        "url": "https://obsidian.md",
+        "category": "⚡ Productivity & Document Tools",
+        "description": "Extensible Markdown knowledge base and connected note-taking app utilizing Zettelkasten bidirectional linking for research."
+    },
+    "suno.com": {
+        "name": "Suno AI",
+        "url": "https://suno.com",
+        "category": "🎵 Audio, Voice & Music",
+        "description": "Generative AI music platform that turns lyrics and study notes into broadcast-quality songs with full vocals and instruments."
+    },
+    "gitmind.com": {
+        "name": "GitMind",
+        "url": "https://gitmind.com",
+        "category": "⚡ Productivity & Document Tools",
+        "description": "Collaborative AI-powered mind mapping and flowchart tool to brainstorm, study, and visually outline complex topics."
+    },
+    "pll.harvard.edu": {
+        "name": "Harvard Online Learning",
+        "url": "https://pll.harvard.edu",
+        "category": "📚 Learning, Study & Research",
+        "description": "Official online portal for free courses, lectures, and professional certificates direct from Harvard University faculty."
+    },
+    "chromeenterprise.google": {
+        "name": "ChromeOS Flex",
+        "url": "https://chromeenterprise.google/os/chromeosflex/",
+        "category": "🛠️ Utilities & Web Tools",
+        "description": "Cloud-first, fast operating system by Google designed to revive and upgrade older Windows laptops and PCs."
+    },
+    "mulerun.com": {
+        "name": "MuleRun AI",
+        "url": "https://mulerun.com",
+        "category": "🤖 AI & Machine Learning Tools",
+        "description": "AI productivity and academic study workspace helping students discover tools and streamline coursework."
+    },
+    "lovart.ai": {
+        "name": "Lovart AI",
+        "url": "https://lovart.ai",
+        "category": "🎨 Design, 3D & Graphics",
+        "description": "AI-driven visual design tool and artistic creative generator for prompts and graphic media."
+    },
+    "odoo.com": {
+        "name": "Odoo",
+        "url": "https://odoo.com",
+        "category": "💼 Business, Marketing & SEO",
+        "description": "Open-source integrated enterprise software suite covering e-commerce, CRM, inventory, and accounting."
+    },
+    "skillbuilder.aws": {
+        "name": "AWS Skill Builder",
+        "url": "https://skillbuilder.aws",
+        "category": "📚 Learning, Study & Research",
+        "description": "Official Amazon Web Services training center offering 600+ free digital cloud computing courses and lab exercises."
+    },
+    "grow.google": {
+        "name": "Grow with Google",
+        "url": "https://grow.google",
+        "category": "📚 Learning, Study & Research",
+        "description": "Google's official certification programs offering free training in AI, data analytics, project management, and IT."
+    },
+    "biodigital.com": {
+        "name": "BioDigital Human",
+        "url": "https://biodigital.com",
+        "category": "📚 Learning, Study & Research",
+        "description": "Interactive 3D virtual human anatomy atlas and disease explorer for medical students, healthcare pros, and biology."
+    },
+    "phet.colorado.edu": {
+        "name": "PhET Interactive Simulations",
+        "url": "https://phet.colorado.edu",
+        "category": "📚 Learning, Study & Research",
+        "description": "Research-backed interactive science and math simulations by University of Colorado Boulder for chemistry and physics."
+    },
+    "ticker.finology.in": {
+        "name": "Finology Ticker",
+        "url": "https://ticker.finology.in",
+        "category": "💼 Business, Marketing & SEO",
+        "description": "Financial learning, stock analysis, and equity screening platform for finance, banking, and commerce students."
+    },
+    "fi.money": {
+        "name": "Fi Money",
+        "url": "https://fi.money",
+        "category": "⚡ Productivity & Document Tools",
+        "description": "Digital zero-balance banking, expense tracking, and smart financial management app tailored for students."
+    },
+    "wolframalpha.com": {
+        "name": "Wolfram Alpha",
+        "url": "https://wolframalpha.com",
+        "category": "📚 Learning, Study & Research",
+        "description": "Computational intelligence engine solving complex math, physics, engineering, and scientific equations step-by-step."
+    },
+    "consensus.app": {
+        "name": "Consensus AI",
+        "url": "https://consensus.app",
+        "category": "📚 Learning, Study & Research",
+        "description": "AI search engine providing research-backed answers extracted directly from peer-reviewed scientific literature."
+    },
+    "chatdev.ai": {
+        "name": "ChatDev",
+        "url": "https://chatdev.ai",
+        "category": "💻 Coding & Web Development",
+        "description": "Virtual software development company powered by multi-agent cooperative LLMs working together on code."
+    },
+    "claude.ai": {
+        "name": "Claude by Anthropic",
+        "url": "https://claude.ai",
+        "category": "🤖 AI & Machine Learning Tools",
+        "description": "Next-generation AI assistant built by Anthropic with 200k context window for reasoning, analysis, and coding."
+    },
+    "deepseek.com": {
+        "name": "DeepSeek AI",
+        "url": "https://deepseek.com",
+        "category": "🤖 AI & Machine Learning Tools",
+        "description": "State-of-the-art open-weight reasoning and code generation AI model platform."
+    },
+    "typelit.io": {
+        "name": "TypeLit.io",
+        "url": "https://typelit.io",
+        "category": "⚡ Productivity & Document Tools",
+        "description": "Improve touch typing speed and accuracy by typing entire classic public-domain books directly in the browser."
+    },
+    "keybr.com": {
+        "name": "Keybr",
+        "url": "https://keybr.com",
+        "category": "⚡ Productivity & Document Tools",
+        "description": "Smart touch typing tutor that uses muscle memory algorithms to target your weakest keys."
+    },
+    "coursera.org": {
+        "name": "Coursera",
+        "url": "https://coursera.org",
+        "category": "📚 Learning, Study & Research",
+        "description": "Global online learning platform offering courses and degrees from top universities like Stanford and Yale."
+    },
+    "photopea.com": {
+        "name": "Photopea",
+        "url": "https://photopea.com",
+        "category": "🎨 Design, 3D & Graphics",
+        "description": "Advanced browser-based raster and vector photo editor supporting PSD, AI, and RAW files without installation."
+    },
+    "remove.bg": {
+        "name": "Remove.bg",
+        "url": "https://remove.bg",
+        "category": "🎨 Design, 3D & Graphics",
+        "description": "1-click automated AI tool to remove image backgrounds with high-precision edge cutout in seconds."
+    },
+    "uiverse.io": {
+        "name": "Uiverse.io",
+        "url": "https://uiverse.io",
+        "category": "🎨 Design, 3D & Graphics",
+        "description": "World's largest open-source library of community-made CSS and Tailwind animated UI elements, buttons, and switches."
+    },
+    "coolors.co": {
+        "name": "Coolors",
+        "url": "https://coolors.co",
+        "category": "🎨 Design, 3D & Graphics",
+        "description": "Super-fast color palette generator and color scheme explorer for creative designers and web developers."
+    },
+    "cleanup.pictures": {
+        "name": "Cleanup.pictures",
+        "url": "https://cleanup.pictures",
+        "category": "🎨 Design, 3D & Graphics",
+        "description": "Erase unwanted people, text, blemishes, or defects from any photo using AI inpainting."
+    },
+    "supercook.com": {
+        "name": "SuperCook",
+        "url": "https://supercook.com",
+        "category": "⚡ Productivity & Document Tools",
+        "description": "Zero-waste recipe search engine that matches recipes to ingredients you already have at home."
+    },
+    "musclewiki.com": {
+        "name": "MuscleWiki",
+        "url": "https://musclewiki.com",
+        "category": "⚡ Productivity & Document Tools",
+        "description": "Interactive visual body map where you click any muscle to get exercise guides and workout plans."
+    },
+    "scribehow.com": {
+        "name": "Scribe",
+        "url": "https://scribehow.com",
+        "category": "⚡ Productivity & Document Tools",
+        "description": "Automatically turns any digital workflow into a visual step-by-step guide with screenshots."
+    },
+    "cloudconvert.com": {
+        "name": "CloudConvert",
+        "url": "https://cloudconvert.com",
+        "category": "⚡ Productivity & Document Tools",
+        "description": "Universal online file converter supporting 200+ audio, video, document, and image formats."
+    },
+    "tinypng.com": {
+        "name": "TinyPNG",
+        "url": "https://tinypng.com",
+        "category": "⚡ Productivity & Document Tools",
+        "description": "Smart WebP, PNG, and JPEG compression tool that reduces file sizes by up to 70%."
+    },
+    "fast.com": {
+        "name": "Fast.com",
+        "url": "https://fast.com",
+        "category": "🛠️ Utilities & Web Tools",
+        "description": "Clean, ad-free broadband internet speed testing tool powered by Netflix servers."
+    },
+    "temp-mail.org": {
+        "name": "Temp-Mail",
+        "url": "https://temp-mail.org",
+        "category": "🛠️ Utilities & Web Tools",
+        "description": "Disposable temporary email address service to prevent spam and protect online privacy."
+    },
+    "12ft.io": {
+        "name": "12ft Ladder",
+        "url": "https://12ft.io",
+        "category": "🛠️ Utilities & Web Tools",
+        "description": "Bypass web paywalls and view clean readable article text without ads or popups."
+    },
+    "notion.so": {
+        "name": "Notion",
+        "url": "https://notion.so",
+        "category": "⚡ Productivity & Document Tools",
+        "description": "All-in-one connected workspace for student notes, syllabi, assignment trackers, and wikis."
+    },
+    "canva.com": {
+        "name": "Canva",
+        "url": "https://canva.com",
+        "category": "🎨 Design, 3D & Graphics",
+        "description": "Visual graphic design platform for creating social media graphics, presentations, and posters."
+    },
+    "vocalremover.org": {
+        "name": "Vocal Remover",
+        "url": "https://vocalremover.org",
+        "category": "🎵 Audio, Voice & Music",
+        "description": "AI-powered online audio tool that isolates vocals and instrumental tracks for free."
+    },
+    "earthcam.com": {
+        "name": "EarthCam",
+        "url": "https://earthcam.com",
+        "category": "🗺️ Maps, 3D & Exploration",
+        "description": "Global network of live streaming webcams providing scenic and landmark views worldwide."
+    },
+    "shutup10": {
+        "name": "O&O ShutUp10++",
+        "url": "https://www.oo-software.com/en/shutup10",
+        "category": "🛠️ Utilities & Web Tools",
+        "description": "Free antispy and telemetry tweaking tool for Windows 10 and 11 to protect privacy and speed up PC boot time."
+    },
+    "whynotwin11": {
+        "name": "WhyNotWin11",
+        "url": "https://github.com/rcmaehl/WhyNotWin11",
+        "category": "🛠️ Utilities & Web Tools",
+        "description": "Open-source detection script to test PC hardware readiness and compatibility for Windows 11."
+    },
+    "chunkbase.com": {
+        "name": "Chunkbase",
+        "url": "https://www.chunkbase.com",
+        "category": "🎮 Gaming & Fun Web Experiments",
+        "description": "Minecraft world explorer app for finding biomes, villages, slime chunks, and structures in any seed."
+    },
+    "duckduckgo.com": {
+        "name": "DuckDuckGo Email Protection",
+        "url": "https://duckduckgo.com/email",
+        "category": "🛠️ Utilities & Web Tools",
+        "description": "Free email forwarding service that removes email trackers and creates private disposable addresses."
+    },
+    "speechify.com": {
+        "name": "Speechify",
+        "url": "https://speechify.com",
+        "category": "⚡ Productivity & Document Tools",
+        "description": "Leading text-to-speech reader that turns any book, PDF, or document into natural audio."
+    },
+    "promptbase.com": {
+        "name": "PromptBase",
+        "url": "https://promptbase.com",
+        "category": "🤖 AI & Machine Learning Tools",
+        "description": "Marketplace and search engine for high-quality DALL-E, Midjourney, and ChatGPT prompts."
+    },
+    "ankiweb.net": {
+        "name": "AnkiWeb",
+        "url": "https://apps.ankiweb.net",
+        "category": "📚 Learning, Study & Research",
+        "description": "Powerful, intelligent flashcard system utilizing spaced repetition algorithms for long-term memory."
+    },
+    "linkedin.com": {
+        "name": "LinkedIn Learning",
+        "url": "https://linkedin.com/learning",
+        "category": "📚 Learning, Study & Research",
+        "description": "Professional video courses taught by industry experts in software, business, and creative skills."
+    }
+}
+
 # Extensive topic & showcase pattern mapping to exact websites
 TOPIC_RULES = [
     # 🎨 Design, 3D & Animations
@@ -258,6 +622,104 @@ TOPIC_RULES = [
      'InstantID', 'https://github.com/InstantID/InstantID', '🤖 AI & Machine Learning Tools', 'State-of-the-art zero-shot identity-preserving image synthesis method.'),
     (r'(100 ai tools|120 mind blowing ai tools|find almost any tools|best ai tools)',
      'Toolify.ai', 'https://toolify.ai', '🤖 AI & Machine Learning Tools', 'The world\'s most comprehensive directory of new AI tools, apps, and software updated daily.'),
+
+    # 🤖 Advanced AI, LLMs & Multi-Agent Platforms
+    (r'(chatgpt|chat gpt|gpt-4|gpt4)',
+     'ChatGPT', 'https://chatgpt.com', '🤖 AI & Machine Learning Tools', 'Conversational AI assistant by OpenAI for answering questions, coding, research, writing, and problem solving.'),
+    (r'(gemini|google gemini|bard)',
+     'Google Gemini', 'https://gemini.google.com', '🤖 AI & Machine Learning Tools', 'Multimodal conversational AI model by Google for advanced reasoning, coding, search, and Google Workspace integration.'),
+    (r'(perplexity|perplexity pro)',
+     'Perplexity AI', 'https://perplexity.ai', '🤖 AI & Machine Learning Tools', 'Conversational AI search engine delivering verified answers with real-time web citations and academic research papers.'),
+    (r'(claude ai|claude\.ai|claude 3)',
+     'Claude by Anthropic', 'https://claude.ai', '🤖 AI & Machine Learning Tools', 'Advanced conversational AI with 200k context window for reasoning, complex analysis, and coding.'),
+    (r'(deepseek|deep seek)',
+     'DeepSeek AI', 'https://deepseek.com', '🤖 AI & Machine Learning Tools', 'State-of-the-art open-weight reasoning and code generation AI model platform.'),
+    (r'(notebooklm|audio overview|notebook lm)',
+     'NotebookLM by Google', 'https://notebooklm.google.com', '🤖 AI & Machine Learning Tools', 'Personalized AI research assistant that turns notes, lecture PDFs, and documents into interactive audio discussions and podcasts.'),
+    (r'(mulerun|mule run)',
+     'MuleRun AI', 'https://mulerun.com', '🤖 AI & Machine Learning Tools', 'AI productivity and academic study workspace helping students discover tools and streamline coursework.'),
+    (r'(promptbase|comment for prompt|ai prompt)',
+     'PromptBase', 'https://promptbase.com', '🤖 AI & Machine Learning Tools', 'Marketplace and search engine for high-quality DALL-E, Midjourney, and ChatGPT prompts.'),
+    (r'(60 ai agents|ai agents working|chatdev)',
+     'ChatDev', 'https://chatdev.ai', '💻 Coding & Web Development', 'Virtual software development company powered by multi-agent cooperative LLMs working together on code.'),
+    (r'(turn idea into apps|v0\.dev|lovable)',
+     'v0 by Vercel', 'https://v0.dev', '💻 Coding & Web Development', 'AI prompt-to-app generator that turns natural language UI ideas and sketches into production-ready React/Tailwind code.'),
+    (r'(switching to linux|try linux|distrosea)',
+     'DistroSea', 'https://distrosea.com', '💻 Coding & Web Development', 'Run and test drive dozens of popular Linux distributions live inside your web browser without downloading ISOs or installing anything.'),
+
+    # ⚡ Presentation, Notes & Productivity
+    (r'(presentation maker|presentations?|ppt maker|slide deck|make free presentations)',
+     'Gamma App', 'https://gamma.app', '⚡ Productivity & Document Tools', 'AI-powered presentation, document, and webpage builder that generates styled interactive slide decks from prompts in seconds.'),
+    (r'(zettelkasten|zettlekasten|obsidian|study method|study notes|smart ways to make study notes)',
+     'Obsidian', 'https://obsidian.md', '⚡ Productivity & Document Tools', 'Extensible Markdown knowledge base and connected note-taking app utilizing Zettelkasten bidirectional linking for research.'),
+    (r'(mindmaps|mindmap|mind maps|mind map|learn any topic easily)',
+     'GitMind', 'https://gitmind.com', '⚡ Productivity & Document Tools', 'Collaborative AI-powered mind mapping and flowchart tool to brainstorm, study, and visually outline complex topics.'),
+    (r'(typing game|websites for learning typing|typing test|monkeytype)',
+     'Monkeytype', 'https://monkeytype.com', '⚡ Productivity & Document Tools', 'Customizable, minimalistic typing test platform with comprehensive speed statistics, accuracy tracking, and custom practice modes.'),
+    (r'(typelit)',
+     'TypeLit.io', 'https://typelit.io', '⚡ Productivity & Document Tools', 'Improve touch typing speed and accuracy by typing entire classic public-domain books directly in the browser.'),
+    (r'(keybr)',
+     'Keybr', 'https://keybr.com', '⚡ Productivity & Document Tools', 'Smart touch typing tutor that uses muscle memory algorithms to target your weakest keys.'),
+    (r'(padhna hi na pade|speechify)',
+     'Speechify', 'https://speechify.com', '⚡ Productivity & Document Tools', 'Leading text-to-speech reader that turns any book, PDF, or document into natural audio.'),
+
+    # 📚 Learning, Academics, University & Skills
+    (r'(learn from harvard|harvard online)',
+     'Harvard Online Learning', 'https://pll.harvard.edu', '📚 Learning, Study & Research', 'Official online portal for free courses, lectures, and professional certificates direct from Harvard University faculty.'),
+    (r'(aws builder|aws course|aws skill builder)',
+     'AWS Skill Builder', 'https://skillbuilder.aws', '📚 Learning, Study & Research', 'Official Amazon Web Services training center offering 600+ free digital cloud computing courses and lab exercises.'),
+    (r'(google.*free.*courses|google ai courses|free ai courses)',
+     'Grow with Google', 'https://grow.google', '📚 Learning, Study & Research', 'Google\'s official certification programs offering free training in AI, data analytics, project management, and IT.'),
+    (r'(skills? that can make you rich|top rated skills|high demand skills|high income skills|career options|career)',
+     'Coursera', 'https://coursera.org', '📚 Learning, Study & Research', 'Global online learning platform offering courses and degrees from top universities like Stanford and Yale.'),
+    (r'(medical students|medical notes)',
+     'BioDigital Human', 'https://biodigital.com', '📚 Learning, Study & Research', 'Interactive 3D virtual human anatomy atlas and disease explorer for medical students, healthcare pros, and biology.'),
+    (r'(science students|chemistry experiments)',
+     'PhET Interactive Simulations', 'https://phet.colorado.edu', '📚 Learning, Study & Research', 'Research-backed interactive science and math simulations by University of Colorado Boulder for chemistry and physics.'),
+    (r'(math solver|solve math|wolfram)',
+     'Wolfram Alpha', 'https://wolframalpha.com', '📚 Learning, Study & Research', 'Computational intelligence engine solving complex math, physics, engineering, and scientific equations step-by-step.'),
+    (r'(research papers|academic papers|scientific papers|consensus)',
+     'Consensus AI', 'https://consensus.app', '📚 Learning, Study & Research', 'AI search engine providing research-backed answers extracted directly from peer-reviewed scientific literature.'),
+    (r'(flashcards|spaced repetition|anki)',
+     'AnkiWeb', 'https://apps.ankiweb.net', '📚 Learning, Study & Research', 'Powerful, intelligent flashcard system utilizing spaced repetition algorithms for long-term memory.'),
+    (r'(tech network|networking for students)',
+     'LinkedIn Learning', 'https://linkedin.com/learning', '📚 Learning, Study & Research', 'Professional video courses taught by industry experts in software, business, and creative skills.'),
+
+    # 💼 Business, Finance & E-Commerce
+    (r'(commerce students|financial skills)',
+     'Finology Ticker', 'https://ticker.finology.in', '💼 Business, Marketing & SEO', 'Financial learning, stock analysis, and equity screening platform for finance, banking, and commerce students.'),
+    (r'(zero balance bank accounts|zero balance|bank account)',
+     'Fi Money', 'https://fi.money', '⚡ Productivity & Document Tools', 'Digital zero-balance banking, expense tracking, and smart financial management app tailored for students.'),
+    (r'(odoo|e-com with odoo)',
+     'Odoo', 'https://odoo.com', '💼 Business, Marketing & SEO', 'Open-source integrated enterprise software suite covering e-commerce, CRM, inventory, and accounting.'),
+
+    # 🎵 Audio & Music AI
+    (r'(study notes into song|convert.*song|suno ai|music ai|suno)',
+     'Suno AI', 'https://suno.com', '🎵 Audio, Voice & Music', 'Generative AI music platform that turns lyrics and study notes into broadcast-quality songs with full vocals and instruments.'),
+    (r'(udio)',
+     'Udio', 'https://udio.com', '🎵 Audio, Voice & Music', 'High-fidelity AI music generation engine capable of generating full tracks from prompts.'),
+
+    # 🛠️ System Utilities & Windows Tools
+    (r'(chromebook|chromeos flex|turn your dusty old laptop)',
+     'ChromeOS Flex', 'https://chromeenterprise.google/os/chromeosflex/', '🛠️ Utilities & Web Tools', 'Cloud-first, fast operating system by Google designed to revive and upgrade older Windows laptops and PCs.'),
+    (r'(windows telemetry|increase pc boot time)',
+     'O&O ShutUp10++', 'https://www.oo-software.com/en/shutup10', '🛠️ Utilities & Web Tools', 'Free antispy and telemetry tweaking tool for Windows 10 and 11 to protect privacy and speed up PC boot time.'),
+    (r'(system supports windows 11|whynotwin11)',
+     'WhyNotWin11', 'https://github.com/rcmaehl/WhyNotWin11', '🛠️ Utilities & Web Tools', 'Open-source detection script to test PC hardware readiness and compatibility for Windows 11.'),
+    (r'(minecraft folks|chunkbase)',
+     'Chunkbase', 'https://www.chunkbase.com', '🎮 Gaming & Fun Web Experiments', 'Minecraft world explorer app for finding biomes, villages, slime chunks, and structures in any seed.'),
+    (r'(\+addressing|addressing|duckduckgo email)',
+     'DuckDuckGo Email Protection', 'https://duckduckgo.com/email', '🛠️ Utilities & Web Tools', 'Free email forwarding service that removes email trackers and creates private disposable addresses.'),
+    (r'(lovart|nano banana)',
+     'Lovart AI', 'https://lovart.ai', '🎨 Design, 3D & Graphics', 'AI creative design and digital artwork platform.'),
+    (r'(file tools|all in one file)',
+     'TinyWow', 'https://tinywow.com', '⚡ Productivity & Document Tools', 'Free online toolkit for PDF editing, document conversion, file compression, and media tools.'),
+    (r'(secret websites for students|useful websites for students|amazing website for students|best website for students)',
+     'TinyWow', 'https://tinywow.com', '⚡ Productivity & Document Tools', 'Over 200+ free online utility tools solving student PDF, image, video, and writing problems.'),
+    (r'(assignments ready|assignment solver|assignments|secret ai tool for students|secret ai hacks for students|ai hacks for students|student ai|exam preparation|3 hidden study ai hacks|sirf 5 mint)',
+     'QuillBot', 'https://quillbot.com', '📚 Learning, Study & Research', 'AI paraphrasing, grammar checking, academic summarization, plagiarism detection, and student thesis writing assistance.'),
+    (r'(all ai tools free|mind blowing ai tools|secret ai tools|2 secret ai tools|3 secret ai tools)',
+     'Toolify.ai', 'https://toolify.ai', '🤖 AI & Machine Learning Tools', 'Comprehensive AI tools directory discovering the latest trending artificial intelligence applications.')
 ]
 
 def clean_title(title):
@@ -318,42 +780,45 @@ def resolve_video_to_tool(title, url, video_id, channel_name="YouTube"):
     if not cleaned:
         cleaned = "Web Utility"
 
-    derived_name = re.sub(r'^(find|create|build|turn|make|shows?|generates?|simulate|explore|learn|check|get)\s+(almost\s+)?(any\s+)?', '', cleaned, flags=re.I).strip()
-    if len(derived_name) > 35 or not derived_name:
-        derived_name = cleaned[:30]
-
     # Map to appropriate official tool
-    if any(k in title_lower for k in ['#ai', '#aitools', 'chatgpt', 'gpt', 'llm', 'prompt', 'bot']):
+    if any(k in title_lower for k in ['#ai', '#aitools', 'chatgpt', 'gpt', 'llm', 'prompt', 'bot', 'artificial intelligence']):
+        official_name = "Toolify.ai"
         cat = "🤖 AI & Machine Learning Tools"
         official_url = "https://toolify.ai"
-        cap = f"AI features: {cleaned}"
-    elif any(k in title_lower for k in ['#design', '#3d', 'logo', 'vector', 'photo', 'graphic', 'art']):
+        cap = f"AI tools directory & software catalog ({cleaned})"
+    elif any(k in title_lower for k in ['#design', '#3d', 'logo', 'vector', 'photo', 'graphic', 'art', 'ui', 'ux']):
+        official_name = "Toools.design"
         cat = "🎨 Design, 3D & Graphics"
         official_url = "https://toools.design"
-        cap = f"Creative design utility: {cleaned}"
-    elif any(k in title_lower for k in ['#coding', '#dev', 'coding', 'code', 'linux', 'app']):
+        cap = f"Curated design resources & mockups ({cleaned})"
+    elif any(k in title_lower for k in ['#coding', '#dev', 'coding', 'code', 'linux', 'app', 'developer', 'python', 'javascript']):
+        official_name = "Replit"
         cat = "💻 Coding & Web Development"
         official_url = "https://replit.com"
-        cap = f"Development & code features: {cleaned}"
-    elif any(k in title_lower for k in ['#study', '#learn', 'student', 'exam', 'paper', 'notes']):
+        cap = f"Collaborative browser coding & dev tools ({cleaned})"
+    elif any(k in title_lower for k in ['#study', '#learn', 'student', 'exam', 'paper', 'notes', 'college', 'assignment']):
+        official_name = "QuillBot"
         cat = "📚 Learning, Study & Research"
         official_url = "https://quillbot.com"
-        cap = f"Study & academic utility: {cleaned}"
-    elif any(k in title_lower for k in ['#music', '#audio', 'song', 'vocals', 'instrument']):
+        cap = f"Academic study & writing assistant ({cleaned})"
+    elif any(k in title_lower for k in ['#music', '#audio', 'song', 'vocals', 'instrument', 'sound']):
+        official_name = "Vocal Remover"
         cat = "🎵 Audio, Voice & Music"
         official_url = "https://vocalremover.org"
-        cap = f"Audio manipulation: {cleaned}"
-    elif any(k in title_lower for k in ['#map', '#maps', 'travel', 'earth']):
+        cap = f"Audio isolation & voice processing ({cleaned})"
+    elif any(k in title_lower for k in ['#map', '#maps', 'travel', 'earth', 'world']):
+        official_name = "EarthCam"
         cat = "🗺️ Maps, 3D & Exploration"
         official_url = "https://earthcam.com"
-        cap = f"Interactive map & location views: {cleaned}"
+        cap = f"Live webcams & virtual exploration ({cleaned})"
     else:
+        official_name = "TinyWow"
         cat = "⚡ Productivity & Document Tools"
         official_url = "https://tinywow.com"
-        cap = f"Online productivity utilities: {cleaned}"
+        cap = f"Free online PDF & utility toolkit ({cleaned})"
 
     return {
-        "name": derived_name.capitalize(),
+        "name": official_name,
         "url": official_url,
         "category": cat,
         "capability": cap,
@@ -570,27 +1035,48 @@ def main():
 
     for norm_url, entry in websites_by_url.items():
         total_vids = len(entry["videos"])
-        # Format description answering: "Is website se kya kya kar sakte hain hum"
-        unique_caps = [c for c in entry["capabilities"] if c.strip()]
-        if len(unique_caps) == 1:
-            desc = f"Is website se ye kar sakte hain: {unique_caps[0]}"
+        
+        # Check canonical master entry for brand name & base description
+        domain_key = norm_url.replace("https://", "").replace("http://", "").split("/")[0]
+        canon = CANONICAL_ENTRIES.get(domain_key)
+        if not canon:
+            for k, c in CANONICAL_ENTRIES.items():
+                if k in domain_key:
+                    canon = c
+                    break
+
+        if canon:
+            final_name = canon["name"]
+            final_cat = canon["category"]
+            canon_desc = canon["description"]
         else:
-            # Combine up to 4 major capabilities cleanly
-            combined_caps = " • ".join(unique_caps[:4])
-            desc = f"Is website se ye sab kar sakte hain: {combined_caps}"
+            final_name = entry["name"]
+            final_cat = entry["category"]
+            canon_desc = ""
+
+        # Format description answering: "Is website se kya kya kar sakte hain hum"
+        if canon_desc:
+            desc = f"Is website se ye sab kar sakte hain: {canon_desc}"
+        else:
+            unique_caps = [c for c in entry["capabilities"] if c.strip()]
+            if len(unique_caps) == 1:
+                desc = f"Is website se ye kar sakte hain: {unique_caps[0]}"
+            else:
+                combined_caps = " • ".join(unique_caps[:3])
+                desc = f"Is website se ye sab kar sakte hain: {combined_caps}"
         
         if total_vids > 1:
             desc += f" (Channel me kul {total_vids} alag-alag videos me featured)"
 
         consolidated_items.append({
-            "name": entry["name"],
+            "name": final_name,
             "url": entry["url"],
-            "category": entry["category"],
+            "category": final_cat,
             "description": desc,
             "videos_count": total_vids,
             "videos": entry["videos"]
         })
-        category_counts[entry["category"]] += 1
+        category_counts[final_cat] += 1
 
     print(f"✅ Consolidated into {len(consolidated_items)} UNIQUE websites (Zero repeats!).")
     print("\n📈 Category Breakdown:")
