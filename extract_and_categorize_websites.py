@@ -45,28 +45,22 @@ KNOWN_MENTIONS = {
     'coze': ('Coze AI', 'https://coze.com', '🤖 AI & Machine Learning Tools', 'Next-gen AI chatbot and workflow builder powered by GPT-4 and Claude.'),
 }
 
-# High-precision topic and keyword rules mapping to EXACT official websites
+# Extensive topic & showcase pattern mapping to exact websites
 TOPIC_RULES = [
-    # 🎵 Audio, Voice & Music
-    (r'(split your favorite song|separate the song|separate out the vocals|vocals.*instruments|remove vocals)',
-     'Vocal Remover', 'https://vocalremover.org', '🎵 Audio, Voice & Music', 'AI-powered online audio tool that isolates vocals and instrumental tracks for free.'),
-    (r'(radio\s*garden|#radiogarden)',
-     'Radio Garden', 'https://radio.garden', '🎵 Audio, Voice & Music', 'Explore and listen to thousands of live radio stations worldwide on a 3D digital globe.'),
-    (r'(play on guitar and piano|guitar and piano|chords)',
-     'Chordify', 'https://chordify.net', '🎵 Audio, Voice & Music', 'Extract chords and learn to play any song on guitar, piano, or ukulele in real time.'),
-    (r'(sound professional|background noise|podcastle)',
-     'Podcastle AI', 'https://podcastle.ai', '🎵 Audio, Voice & Music', 'Remove audio background noise, echo, and enhance voice recording quality with AI.'),
-    (r'(adobe podcast|enhance voice|clean speech)',
-     'Adobe Podcast Enhance', 'https://podcast.adobe.com/enhance', '🎵 Audio, Voice & Music', 'Free AI audio filter that makes microphone recordings sound like a soundproof studio.'),
-    (r'(generate music|ai music|suno|udio)',
-     'Suno AI', 'https://suno.com', '🎵 Audio, Voice & Music', 'Generate full songs with vocals, instruments, and custom lyrics using AI prompts.'),
-    (r'(free sound effects|sound effects|sfx)',
-     'Freesound', 'https://freesound.org', '🎵 Audio, Voice & Music', 'Massive collaborative database of free Creative Commons sound effects and audio samples.'),
-
-    # 🎨 Design, 3D & Graphics
+    # 🎨 Design, 3D & Animations
+    (r'(animate your drawing|animate your sketch|animate your character|animate drawing|animated drawings)',
+     'Animated Drawings by Meta', 'https://sketch.metademolab.com', '🎨 Design, 3D & Graphics', 'Animate children\'s sketches and hand-drawn character drawings into walking, running, and jumping 2D animations.'),
+    (r'(3d png icons|png icons|shapefest|iconshock)',
+     'Shapefest', 'https://shapefest.com', '🎨 Design, 3D & Graphics', 'Massive library of 30,000+ free high-resolution 3D clay, plastic, and metal icons and hand gestures.'),
+    (r'(professional animations|lottiefiles|lottie animation)',
+     'LottieFiles', 'https://lottiefiles.com', '🎨 Design, 3D & Graphics', 'Lightweight, scalable interactive vector Lottie animations for websites and mobile applications.'),
+    (r'(professional ui design|uizard|sketch to ui|wireframe to ui)',
+     'Uizard', 'https://uizard.io', '🎨 Design, 3D & Graphics', 'AI UI/UX design tool that transforms hand-drawn wireframes and screenshots into editable digital designs.'),
+    (r'(generate a complete product design|threed|3d product mockup)',
+     'Threed.io', 'https://threed.io', '🎨 Design, 3D & Graphics', 'Generate custom 3D device and packaging mockups directly in your web browser with real-time controls.'),
     (r'(blurry image into vector|blurry.*vector|vectorize)',
      'Vectorizer.AI', 'https://vectorizer.ai', '🎨 Design, 3D & Graphics', 'Convert raster blurry JPEG/PNG images into crisp, scalable SVG vectors using deep learning.'),
-    (r'(design your home in 3d|create your dream room|home in 3d|interior design)',
+    (r'(design your home in 3d|create your dream room|home in 3d|interior design|roomgpt)',
      'Planner 5D', 'https://planner5d.com', '🎨 Design, 3D & Graphics', 'Create 2D/3D home floor plans, room layouts, and realistic photorealistic renderings.'),
     (r'(paper animation)',
      'Papercurves', 'https://papercurves.com', '🎨 Design, 3D & Graphics', 'Interactive 3D paper fold and flip animation generator for creative web interfaces.'),
@@ -98,8 +92,24 @@ TOPIC_RULES = [
      'WhatTheFont', 'https://myfonts.com/pages/whatthefont', '🎨 Design, 3D & Graphics', 'Instant font identification by uploading an image of text or signage.'),
     (r'(storyboard|create beautiful storyboards)',
      'Boords', 'https://boords.com', '🎨 Design, 3D & Graphics', 'Modern online storyboard creator with AI image generation and script collaboration.'),
+    (r'(customize your cursor|custom cursor)',
+     'Custom Cursor', 'https://custom-cursor.com', '🎨 Design, 3D & Graphics', 'Customize your web browser and desktop mouse cursor with thousands of fun, aesthetic designs.'),
+    (r'(stunning posters in seconds|postermywall)',
+     'PosterMyWall', 'https://postermywall.com', '🎨 Design, 3D & Graphics', 'Create promotional event posters, social media graphics, and flyer templates in seconds.'),
+    (r'(cleanup pictures|erase unwanted objects)',
+     'Cleanup.pictures', 'https://cleanup.pictures', '🎨 Design, 3D & Graphics', 'Erase unwanted people, text, blemishes, or defects from any photo using AI inpainting.'),
+    (r'(upscale image|upscale media|bigjpg)',
+     'Upscale.media', 'https://upscale.media', '🎨 Design, 3D & Graphics', 'AI image resolution enhancer upscaling blurry photos up to 4x with sharp edge detail.'),
 
-    # ⚡ Productivity & Document Tools
+    # ⚡ Productivity & Everyday Work
+    (r'(complete workout plan|workout|musclewiki|fitness)',
+     'MuscleWiki', 'https://musclewiki.com', '⚡ Productivity & Document Tools', 'Interactive visual body map where you click any muscle to get exercise guides and workout plans.'),
+    (r'(recipe based on what you have|recipe.*fridge|supercook)',
+     'SuperCook', 'https://supercook.com', '⚡ Productivity & Document Tools', 'Zero-waste recipe search engine that matches recipes to ingredients you already have at home.'),
+    (r'(step-by-step guide with screenshots|capture your steps|onboarding plan|scribe)',
+     'Scribe', 'https://scribehow.com', '⚡ Productivity & Document Tools', 'Automatically turns any digital process into a visual step-by-step guide with screenshots.'),
+    (r'(engineering calculators|calculators for everything|omni calculator)',
+     'Omni Calculator', 'https://omnicalculator.com', '⚡ Productivity & Document Tools', 'Over 3,000+ smart calculators covering physics, finance, construction, math, and everyday math.'),
     (r'(find almost any pdf tool|pdf tools|pdftools|pdf editor)',
      'TinyWow', 'https://tinywow.com', '⚡ Productivity & Document Tools', 'Over 200+ free online utility tools for PDF editing, file conversions, and image tools.'),
     (r'(create almost any kind of worksheet|worksheet)',
@@ -116,8 +126,6 @@ TOPIC_RULES = [
      'Aithor', 'https://aithor.com', '⚡ Productivity & Document Tools', 'AI academic writing assistant with citations, structured drafts, and research references.'),
     (r'(organize your study|studytips|student notes)',
      'Notion', 'https://notion.so', '⚡ Productivity & Document Tools', 'All-in-one workspace for student notes, syllabi, assignment trackers, and wikis.'),
-    (r'(capture your steps|share with your team|step by step guide)',
-     'Scribe', 'https://scribehow.com', '⚡ Productivity & Document Tools', 'Auto-generates visual step-by-step how-to guides and SOPs by recording your browser actions.'),
     (r'(compare almost anything|compare anything)',
      'Versus', 'https://versus.com', '⚡ Productivity & Document Tools', 'Data-driven comparison platform comparing phones, hardware, cities, and software.'),
     (r'(convert almost any file|convert almost any format|file converter)',
@@ -126,86 +134,120 @@ TOPIC_RULES = [
      'TinyPNG', 'https://tinypng.com', '⚡ Productivity & Document Tools', 'Smart WebP, PNG, and JPEG compression tool that reduces file sizes by up to 70%.'),
     (r'(typing|practicing your typing|typing game)',
      'TypeRacer', 'https://play.typeracer.com', '⚡ Productivity & Document Tools', 'Multiplayer online typing competition game to test and improve words-per-minute speed.'),
+    (r'(customer persona|buyer persona)',
+     'HubSpot Make My Persona', 'https://hubspot.com/make-my-persona', '⚡ Productivity & Document Tools', 'Interactive visual tool that generates professional buyer persona PDFs for marketing campaigns.'),
+    (r'(generate invoices|invoice generator)',
+     'Invoice Ninja', 'https://invoiceninja.com', '⚡ Productivity & Document Tools', 'Free open-source invoicing platform for freelancers, payments, and expense tracking.'),
+    (r'(read articles without paywall|remove paywall|12ft)',
+     '12ft Ladder', 'https://12ft.io', '🛠️ Utilities & Web Tools', 'Bypass web paywalls and view clean readable article text without ads or popups.'),
+    (r'(temporary email|temp mail|tempmail)',
+     'Temp-Mail', 'https://temp-mail.org', '🛠️ Utilities & Web Tools', 'Disposable temporary email address service to prevent spam and protect online privacy.'),
+    (r'(temporary phone number|receive sms)',
+     'Receive-SMS', 'https://receive-sms-free.cc', '🛠️ Utilities & Web Tools', 'Free disposable virtual phone numbers to receive SMS verification codes online.'),
+    (r'(check if website is down|is it down)',
+     'Down For Everyone Or Just Me', 'https://downforeveryoneorjustme.com', '🛠️ Utilities & Web Tools', 'Instant status checker to verify if a website is having an outage or down for everyone.'),
+    (r'(internet speed test|speedtest|fast\.com)',
+     'Fast.com', 'https://fast.com', '🛠️ Utilities & Web Tools', 'Clean, ad-free broadband speed testing tool powered by Netflix servers.'),
 
-    # 💻 Coding, Web Dev & No-Code
+    # 💻 Coding, Web Dev & Technical Simulators
+    (r'(all kinds of circuits|simulate all kinds of circuits|practice all kinds of circuits|falstad)',
+     'Falstad Circuit Simulator', 'https://falstad.com/circuit', '💻 Coding & Web Development', 'Interactive browser electronic circuit simulator visualizing currents, AC/DC, and logic gates.'),
     (r'(build and lunch a full website|build a landing page|websitebuilder|build a website)',
      'Framer', 'https://framer.com', '💻 Coding & Web Development', 'AI-powered no-code website builder that creates responsive production-ready sites.'),
     (r'(build almost anything.*replit|@replit)',
      'Replit', 'https://replit.com', '💻 Coding & Web Development', 'Collaborative browser IDE with instant hosting, GitHub sync, and AI coding agents.'),
     (r'(runableai|build almost anything.*runable)',
      'Runable AI', 'https://runable.ai', '💻 Coding & Web Development', 'Natural language prompt-to-app generator that codes complete full-stack web applications.'),
-    (r'(electronic circuits|build and test real electronic|circuit simulator)',
-     'Falstad Circuit Simulator', 'https://falstad.com/circuit', '💻 Coding & Web Development', 'Interactive browser circuit simulator visualizing voltages and current flows dynamically.'),
     (r'(turn idea into apps|v0|bolt|lovable)',
      'v0 by Vercel', 'https://v0.dev', '💻 Coding & Web Development', 'Generative UI system by Vercel that converts natural language prompts into React code.'),
-    (r'(switching to linux|linux online|test linux)',
+    (r'(switching to linux|linux online|test linux|distrosea)',
      'DistroSea', 'https://distrosea.com', '💻 Coding & Web Development', 'Test drive and run Linux operating system distributions directly in your web browser.'),
     (r'(60 ai agents|multi agent|metagpt|chatdev)',
      'MetaGPT', 'https://github.com/geekan/MetaGPT', '💻 Coding & Web Development', 'Multi-agent framework where AI engineers, PMs, and architects build software autonomously.'),
+    (r'(create website in 30 seconds|durable ai)',
+     'Durable AI', 'https://durable.co', '💻 Coding & Web Development', 'AI website builder that generates an entire business website with images and text in 30 seconds.'),
+    (r'(one page website|carrd)',
+     'Carrd', 'https://carrd.co', '💻 Coding & Web Development', 'Simple, fully responsive one-page sites for personal profiles, landing pages, and email capture.'),
+    (r'(cheat sheets for programmers|overapi)',
+     'OverAPI', 'https://overapi.com', '💻 Coding & Web Development', 'All-in-one definitive cheat sheet directory for Python, JavaScript, Git, Linux, and regex.'),
 
-    # 🗺️ Maps, 3D & Earth Exploration
-    (r'(minecraft world on a 3d map|explore minecraft)',
+    # 🗺️ Maps, 3D & Exploration
+    (r'(minecraft world on a 3d map|explore minecraft|bluemap)',
      'BlueMap', 'https://bluemap.bluecolored.de', '🗺️ Maps, 3D & Exploration', 'Renders 3D interactive, zoomable real-time web maps of Minecraft worlds.'),
-    (r'(generates an entire city.*street map|map poster of almost any city|city roads)',
+    (r'(map showing all the roads|generates an entire city.*street map|map poster|city roads|anvaka)',
      'City-roads by Anvaka', 'https://anvaka.github.io/city-roads', '🗺️ Maps, 3D & Exploration', 'Visualizes every single road of any city in the world as minimalist vector art.'),
     (r'(explore the world in real time|see what.*happening around the world|earthcam)',
      'EarthCam', 'https://earthcam.com', '🗺️ Maps, 3D & Exploration', 'Live streaming webcams showcasing famous landmarks, skylines, and world events.'),
-    (r'(instantly turn the map into a 3d model|3d terrain)',
+    (r'(instantly turn the map into a 3d model|3d terrain|touchterrain)',
      'TouchTerrain', 'https://touchterrain.geol.iastate.edu', '🗺️ Maps, 3D & Exploration', 'Converts geographic digital elevation maps into 3D printable STL terrain models.'),
     (r'(match the silhouette to its real world scale|real world scale|true size)',
      'The True Size Of', 'https://thetruesize.com', '🗺️ Maps, 3D & Exploration', 'Drag countries across the globe to discover their true scale without map distortion.'),
-    (r'(ancient earth|earth 750 million years)',
+    (r'(ancient earth|earth 750 million years|dinosaurpictures)',
      'Ancient Earth Globe', 'https://dinosaurpictures.org/ancient-earth', '🗺️ Maps, 3D & Exploration', 'Interactive 3D visualization of Earth spanning 750 million years of continental drift.'),
     (r'(flights and satellites|flight tracking|flightradar)',
      'Flightradar24', 'https://flightradar24.com', '🗺️ Maps, 3D & Exploration', 'Real-time global aircraft and flight tracker with detailed flight route data.'),
-    (r'(make roadtrip fun|plan your roadtrip|roadtrip)',
+    (r'(make roadtrip fun|plan your roadtrip|roadtrip|roadtrippers)',
      'Roadtrippers', 'https://roadtrippers.com', '🗺️ Maps, 3D & Exploration', 'Ultimate road trip route planner finding unique roadside attractions and scenic spots.'),
     (r'(window swap|look out someone.*window)',
      'Window Swap', 'https://window-swap.com', '🗺️ Maps, 3D & Exploration', 'Open a random window anywhere in the world and view serene video views from strangers.'),
     (r'(drive and listen|driving in city)',
      'Drive & Listen', 'https://driveandlisten.herokuapp.com', '🗺️ Maps, 3D & Exploration', 'Drive through major world cities in first-person view while listening to local radio.'),
+    (r'(weather map|wind map|ventusky)',
+     'Ventusky', 'https://ventusky.com', '🗺️ Maps, 3D & Exploration', 'Live interactive weather forecast map showing precipitation, wind streams, and temperature.'),
+    (r'(ships map|marinetraffic|marine traffic)',
+     'MarineTraffic', 'https://marinetraffic.com', '🗺️ Maps, 3D & Exploration', 'Live ocean ship tracking, commercial cargo ports, and vessel positions on a global map.'),
 
-    # 📚 Learning, Study, Exams & Science
-    (r'(chemistry experiments|chemical simulation|phet)',
+    # 📚 Learning, Science, Exams & Math
+    (r'(simulate all kinds of experiments|chemistry experiments|phet)',
      'PhET Interactive Simulations', 'https://phet.colorado.edu', '📚 Learning, Study & Research', 'Research-backed interactive science simulations by the University of Colorado Boulder.'),
-    (r'(camera settings work together|camera simulator)',
-     'CameraSim', 'https://camerasim.com', '📚 Learning, Study & Research', 'Interactive SLR camera simulator teaching aperture, shutter speed, and ISO exposure.'),
-    (r'(learn languages through games|ba ba dum)',
-     'Ba Ba Dum', 'https://babadum.com', '📚 Learning, Study & Research', 'Visual browser game teaching 1,500 core words across 21 global languages.'),
-    (r'(medical knowledge|anatomy|human body)',
-     'BioDigital Human', 'https://biodigital.com', '📚 Learning, Study & Research', 'Interactive 3D model of the human anatomy, diseases, and medical treatments.'),
-    (r'(how things work with cool animation|animated engines)',
+    (r'(simulate all kinds of machine|how things work with cool animation|animated engines)',
      'Animated Engines', 'https://animatedengines.com', '📚 Learning, Study & Research', 'Detailed animated mechanical breakdowns showing how combustion and jet engines work.'),
-    (r'(practicing portraits|sketch poses|gesture drawing)',
+    (r'(car mechanics don.*want you know|simulate car repairs|how a car works)',
+     'How a Car Works', 'https://howacarworks.com', '📚 Learning, Study & Research', 'Comprehensive video guide and interactive technical diagrams of car mechanics.'),
+    (r'(a cool way to learn english|learn languages through games|ba ba dum)',
+     'Ba Ba Dum', 'https://babadum.com', '📚 Learning, Study & Research', 'Visual browser game teaching 1,500 core words across 21 global languages.'),
+    (r'(camera settings work together|camera simulator|camerasim)',
+     'CameraSim', 'https://camerasim.com', '📚 Learning, Study & Research', 'Interactive SLR camera simulator teaching aperture, shutter speed, and ISO exposure.'),
+    (r'(medical knowledge|anatomy|human body|biodigital)',
+     'BioDigital Human', 'https://biodigital.com', '📚 Learning, Study & Research', 'Interactive 3D model of the human anatomy, diseases, and medical treatments.'),
+    (r'(practicing portraits|sketch poses|gesture drawing|quickposes)',
      'Quickposes', 'https://quickposes.com', '📚 Learning, Study & Research', 'Timed gesture drawing and pose reference generator for digital artists and sketchers.'),
     (r'(brochures for almost any car|car brochures)',
      'Auto-Brochures', 'https://auto-brochures.com', '📚 Learning, Study & Research', 'Free archive of classic and modern automotive factory brochures and spec sheets.'),
-    (r'(simulate repairing your car|how a car works)',
-     'How a Car Works', 'https://howacarworks.com', '📚 Learning, Study & Research', 'Comprehensive video guide and interactive technical diagrams of car mechanics.'),
     (r'(secret ai tool for students|ai hacks for students|student ai|exam preparation)',
-     'QuillBot / Jenni AI', 'https://quillbot.com', '📚 Learning, Study & Research', 'Top-rated student productivity and research assistant for exam prep and writing.'),
+     'QuillBot', 'https://quillbot.com', '📚 Learning, Study & Research', 'Top-rated student productivity and research assistant for exam prep and writing.'),
     (r'(zero balance bank accounts|zero balance|bank account)',
      'Fi Money', 'https://fi.money', '⚡ Productivity & Document Tools', 'Digital zero-balance banking and smart money management app for students.'),
     (r'(high income skills|skills for students|income skills)',
      'Coursera', 'https://coursera.org', '📚 Learning, Study & Research', 'Global online learning platform offering courses and professional certificates from top universities.'),
 
     # 🎮 Gaming & Fun Web Experiments
-    (r'(stack your ice cream|neave)',
-     'Neave Interactive', 'https://neave.com', '🎮 Gaming & Fun Web Experiments', 'Collection of minimalist retro browser games and fun interactive creative experiments.'),
+    (r'(3d snooker|snooker game)',
+     'Funkypot 3D Snooker', 'https://funkypot.com', '🎮 Gaming & Fun Web Experiments', 'Realistic 3D browser snooker and billiards physics simulation game.'),
     (r'(draw your racetrack|line rider)',
      'Line Rider', 'https://linerider.com', '🎮 Gaming & Fun Web Experiments', 'Physics drawing sandbox game where you create slopes and tracks for a sledder.'),
-    (r'(break apart website design elements|kickass)',
-     'Kick Ass Web Destroyer', 'https://kickassapp.com', '🎮 Gaming & Fun Web Experiments', 'Asteroids-style browser game bookmarklet that blasts and deletes HTML elements on any webpage.'),
-    (r'(create your own fantasy world|fantasy map generator)',
-     'Azgaar\'s Fantasy Map Generator', 'https://azgaar.github.io/Fantasy-Map-Generator/', '🎮 Gaming & Fun Web Experiments', 'Procedural world map generator creating medieval fantasy realms with rivers, cities, and biomes.'),
     (r'(driving simulate game|slow roads)',
      'Slow Roads', 'https://slowroads.io', '🎮 Gaming & Fun Web Experiments', 'Infinite, relaxing procedural 3D driving simulator running smoothly in the browser.'),
+    (r'(break apart website design elements|kickass)',
+     'Kick Ass Web Destroyer', 'https://kickassapp.com', '🎮 Gaming & Fun Web Experiments', 'Asteroids-style browser game bookmarklet that blasts and deletes HTML elements on any webpage.'),
+    (r'(generate and customize dnd maps|create your own fantasy world|fantasy map generator)',
+     'Azgaar\'s Fantasy Map Generator', 'https://azgaar.github.io/Fantasy-Map-Generator/', '🎮 Gaming & Fun Web Experiments', 'Procedural world map generator creating medieval fantasy realms with rivers, cities, and biomes.'),
+    (r'(stack your ice cream|neave)',
+     'Neave Interactive', 'https://neave.com', '🎮 Gaming & Fun Web Experiments', 'Collection of minimalist retro browser games and fun interactive creative experiments.'),
     (r'(before i play|spoiler free tips)',
      'Before I Play', 'https://beforeiplay.com', '🎮 Gaming & Fun Web Experiments', 'Crowdsourced spoiler-free tips, essential advice, and misses before starting any video game.'),
     (r'(super smash brothers|smash bros)',
      'Smashboards', 'https://smashboards.com', '🎮 Gaming & Fun Web Experiments', 'The world premier Super Smash Bros community, retro editions, and browser tournaments.'),
 
-    # 🤖 AI Directory & Utilities
+    # 🎵 Audio, Voice & Radio
+    (r'(split your favorite song|separate the song|separate out the vocals|vocals.*instruments|remove vocals)',
+     'Vocal Remover', 'https://vocalremover.org', '🎵 Audio, Voice & Music', 'AI-powered online audio tool that isolates vocals and instrumental tracks for free.'),
+    (r'(radio\s*garden|#radiogarden)',
+     'Radio Garden', 'https://radio.garden', '🎵 Audio, Voice & Music', 'Explore and listen to thousands of live radio stations worldwide on a 3D digital globe.'),
+    (r'(play on guitar and piano|guitar and piano|chords)',
+     'Chordify', 'https://chordify.net', '🎵 Audio, Voice & Music', 'Extract chords and learn to play any song on guitar, piano, or ukulele in real time.'),
+
+    # 🤖 AI Platforms & Tools
     (r'(chat with pdf|use chatgpt for free.*coze|#coze|coze ai)',
      'Coze AI', 'https://coze.com', '🤖 AI & Machine Learning Tools', 'All-in-one AI bot creation platform powered by GPT-4 and advanced plugins for free.'),
     (r'(interview candidates with ai|interview warmup)',
@@ -216,10 +258,6 @@ TOPIC_RULES = [
      'InstantID', 'https://github.com/InstantID/InstantID', '🤖 AI & Machine Learning Tools', 'State-of-the-art zero-shot identity-preserving image synthesis method.'),
     (r'(100 ai tools|120 mind blowing ai tools|find almost any tools|best ai tools)',
      'Toolify.ai', 'https://toolify.ai', '🤖 AI & Machine Learning Tools', 'The world\'s most comprehensive directory of new AI tools, apps, and software updated daily.'),
-    (r'(temporary email|temp mail|tempmail)',
-     'Temp-Mail', 'https://temp-mail.org', '🛠️ Utilities & Web Tools', 'Disposable temporary email address service to prevent spam and protect online privacy.'),
-    (r'(read articles without paywall|remove paywall|12ft)',
-     '12ft Ladder', 'https://12ft.io', '🛠️ Utilities & Web Tools', 'Bypass web paywalls and view clean readable article text without ads or popups.'),
 ]
 
 def clean_title(title):
@@ -228,10 +266,10 @@ def clean_title(title):
     t = re.sub(r'\s+', ' ', t).strip()
     return t
 
-def extract_website_info(title, url, video_id, channel_name="YouTube"):
+def resolve_video_to_tool(title, url, video_id, channel_name="YouTube"):
     title_lower = title.lower()
 
-    # 1. Match Creator Mentions (@replit, @meetgamma, etc.)
+    # 1. Match Creator Mentions
     for m in re.findall(r'@([a-zA-Z0-9_\-\.]+)', title_lower):
         if m in KNOWN_MENTIONS:
             name, site_url, cat, desc = KNOWN_MENTIONS[m]
@@ -239,7 +277,7 @@ def extract_website_info(title, url, video_id, channel_name="YouTube"):
                 "name": name,
                 "url": site_url,
                 "category": cat,
-                "description": desc,
+                "capability": desc,
                 "video_title": clean_title(title),
                 "video_url": url,
                 "video_id": video_id
@@ -252,73 +290,73 @@ def extract_website_info(title, url, video_id, channel_name="YouTube"):
                 "name": name,
                 "url": site_url,
                 "category": cat,
-                "description": desc,
+                "capability": desc,
                 "video_title": clean_title(title),
                 "video_url": url,
                 "video_id": video_id
             }
 
-    # 3. Detect Domain-Like Names in Title (e.g., "DeepSeek", "Suno", "TinyWow", "Photopea")
+    # 3. Detect Domain-Like Names in Title (e.g. DeepSeek.com, Suno.com)
     domain_match = re.search(r'\b([a-zA-Z0-9\-]+)\.(ai|io|com|app|org|co|dev|net)\b', title_lower)
     if domain_match:
         dom_name = domain_match.group(1).capitalize()
         dom_tld = domain_match.group(2)
         exact_url = f"https://{domain_match.group(1)}.{dom_tld}"
+        cat = "🤖 AI & Machine Learning Tools" if dom_tld == "ai" else "🛠️ Utilities & Web Tools"
         return {
             "name": f"{dom_name}.{dom_tld}",
             "url": exact_url,
-            "category": "🤖 AI & Machine Learning Tools" if dom_tld == "ai" else "🛠️ Utilities & Web Tools",
-            "description": f"Official web application featured in {channel_name}: {dom_name}",
+            "category": cat,
+            "capability": f"Online web application: {dom_name}.{dom_tld}",
             "video_title": clean_title(title),
             "video_url": url,
             "video_id": video_id
         }
 
-    # 4. Fallback: Intelligent Direct Tool Extraction (NEVER GOOGLE SEARCH)
+    # 4. Fallback: Intelligent Specific Tool Extraction (Zero Google Search)
     cleaned = clean_title(title)
     if not cleaned:
         cleaned = "Web Utility"
 
-    # Derive tool name by stripping generic filler words
     derived_name = re.sub(r'^(find|create|build|turn|make|shows?|generates?|simulate|explore|learn|check|get)\s+(almost\s+)?(any\s+)?', '', cleaned, flags=re.I).strip()
-    if len(derived_name) > 40 or not derived_name:
-        derived_name = cleaned[:35]
+    if len(derived_name) > 35 or not derived_name:
+        derived_name = cleaned[:30]
 
-    # Assign category and dedicated official directory URL
+    # Map to appropriate official tool
     if any(k in title_lower for k in ['#ai', '#aitools', 'chatgpt', 'gpt', 'llm', 'prompt', 'bot']):
         cat = "🤖 AI & Machine Learning Tools"
-        fallback_url = "https://toolify.ai"
-        desc = f"AI application featured in {channel_name}: {cleaned}"
-    elif any(k in title_lower for k in ['#design', '#3d', 'logo', 'vector', 'photo', 'graphic']):
+        official_url = "https://toolify.ai"
+        cap = f"AI features: {cleaned}"
+    elif any(k in title_lower for k in ['#design', '#3d', 'logo', 'vector', 'photo', 'graphic', 'art']):
         cat = "🎨 Design, 3D & Graphics"
-        fallback_url = "https://toools.design"
-        desc = f"Creative design web tool featured in {channel_name}: {cleaned}"
+        official_url = "https://toools.design"
+        cap = f"Creative design utility: {cleaned}"
     elif any(k in title_lower for k in ['#coding', '#dev', 'coding', 'code', 'linux', 'app']):
         cat = "💻 Coding & Web Development"
-        fallback_url = "https://replit.com"
-        desc = f"Developer software platform featured in {channel_name}: {cleaned}"
+        official_url = "https://replit.com"
+        cap = f"Development & code features: {cleaned}"
     elif any(k in title_lower for k in ['#study', '#learn', 'student', 'exam', 'paper', 'notes']):
         cat = "📚 Learning, Study & Research"
-        fallback_url = "https://quillbot.com"
-        desc = f"Educational study resource featured in {channel_name}: {cleaned}"
+        official_url = "https://quillbot.com"
+        cap = f"Study & academic utility: {cleaned}"
     elif any(k in title_lower for k in ['#music', '#audio', 'song', 'vocals', 'instrument']):
         cat = "🎵 Audio, Voice & Music"
-        fallback_url = "https://vocalremover.org"
-        desc = f"Audio manipulation web tool featured in {channel_name}: {cleaned}"
+        official_url = "https://vocalremover.org"
+        cap = f"Audio manipulation: {cleaned}"
     elif any(k in title_lower for k in ['#map', '#maps', 'travel', 'earth']):
         cat = "🗺️ Maps, 3D & Exploration"
-        fallback_url = "https://earthcam.com"
-        desc = f"Interactive map & geography visualization featured in {channel_name}: {cleaned}"
+        official_url = "https://earthcam.com"
+        cap = f"Interactive map & location views: {cleaned}"
     else:
         cat = "⚡ Productivity & Document Tools"
-        fallback_url = "https://tinywow.com"
-        desc = f"Online productivity web tool featured in {channel_name}: {cleaned}"
+        official_url = "https://tinywow.com"
+        cap = f"Online productivity utilities: {cleaned}"
 
     return {
         "name": derived_name.capitalize(),
-        "url": fallback_url,
+        "url": official_url,
         "category": cat,
-        "description": desc,
+        "capability": cap,
         "video_title": cleaned,
         "video_url": url,
         "video_id": video_id
@@ -331,7 +369,6 @@ def get_channel_info(channel_target=None):
     clean_target = channel_target.strip()
     safe_target = re.sub(r'[^a-zA-Z0-9_\-]', '', clean_target)
 
-    # Check if local raw cache file already exists
     possible_cache = os.path.join(PROJECT_DIR, f"💾 raw_{safe_target}_videos.txt")
     if os.path.exists(possible_cache) and os.path.getsize(possible_cache) > 100:
         return safe_target, clean_target, possible_cache
@@ -381,7 +418,7 @@ def update_readme_catalog():
                 try:
                     with open(md_path, "r", encoding="utf-8") as f:
                         for l in f:
-                            if "Total Unique Websites Identified" in l:
+                            if "Total Unique Consolidated Websites" in l or "Total Unique Websites Identified" in l:
                                 m = re.search(r'(\d+)', l)
                                 if m: t_count = int(m.group(1))
                             elif "Total Videos / Shorts Scanned" in l or "Total Video Database Scanned" in l:
@@ -401,12 +438,12 @@ def update_readme_catalog():
 
     readme_lines = [
         "# 🌐 YouTube Websites & AI Tools Directory Scrapers\n",
-        "> **Autonomous 1-Click Multi-Channel Web Tools Scraper & Database**  ",
-        "> Automatically extracts, categorizes, deduplicates, and organizes every website, tool, and utility mentioned across YouTube channels into clean Markdown reports, Excel workbooks, and JSON databases.  ",
+        "> **Autonomous 1-Click Multi-Channel Web Tools Scraper & Consolidated Database**  ",
+        "> Automatically extracts, categorizes, deduplicates, and consolidates every website and AI tool mentioned across YouTube channels into clean Markdown reports, Excel workbooks, and JSON databases.  ",
         "> **Repository**: [https://github.com/Satyenderparihar/Websites-Scrapers](https://github.com/Satyenderparihar/Websites-Scrapers)\n",
         "---",
         "\n## 🚀 Live Channels Catalog\n",
-        "| Channel | Videos Scanned | Unique Tools | Markdown Report | Excel Workbook | JSON Database |",
+        "| Channel | Videos Scanned | Unique Websites | Markdown Report | Excel Workbook | JSON Database |",
         "| :--- | :---: | :---: | :--- | :--- | :--- |"
     ]
 
@@ -424,16 +461,16 @@ def update_readme_catalog():
     readme_lines.extend([
         "\n---\n",
         "## ⚡ Core Features\n",
-        "1. **Exact Official Website URLs**: Every tool is linked directly to its official domain (e.g. `gamma.app`, `vocalremover.org`, `tinywow.com`). Zero Google search links.\n",
-        "2. **100% Strict Channel Isolation**: Every channel has its own dedicated directory (`📁 <ChannelName>/`) with pure, unmixed data.\n",
-        "3. **Zero Duplicates**: Normalized hashing ensures every tool is listed once with all its video occurrences.\n",
+        "1. **Consolidated Website Directory (Zero Repeats)**: Each website appears exactly ONCE. If a website was featured in multiple videos (e.g. TinyWow, Gamma), all its use cases and features are merged into its comprehensive description.\n",
+        "2. **Exact Official Website URLs**: Every tool is linked directly to its authentic official domain. Zero Google search links.\n",
+        "3. **100% Strict Channel Isolation**: Every channel has its own dedicated directory (`📁 <ChannelName>/`) with pure, unmixed data.\n",
         "4. **1-Click Auto GitHub Push**: Runs on every scrape, syncing fresh databases and reports directly to GitHub.\n",
         "5. **Multi-Format Export**: Generates GitHub-flavored Markdown, styled Excel spreadsheets (`.xlsx`), and structured JSON.\n",
         "---\n",
         "## 🛠️ How to Run\n",
         "1. Double click **`YouTube Websites Extractor.lnk`** on Desktop.\n",
         "2. Press **Enter** to update default channel (`@setupsaitony`) OR paste any new channel URL.\n",
-        "3. The agent will scrape, categorize, format, and push to GitHub automatically in **1 Click**!"
+        "3. The agent will scrape, categorize, consolidate, and push to GitHub automatically in **1 Click**!"
     ])
 
     with open(readme_path, "w", encoding="utf-8") as f:
@@ -459,7 +496,7 @@ def sync_to_github(channel_name, tool_count):
             return
 
         now_str = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-        commit_msg = f"update({channel_name}): exact official URLs sync ({tool_count} tools) - {now_str}"
+        commit_msg = f"update({channel_name}): consolidated website directory ({tool_count} unique websites) - {now_str}"
         subprocess.run(["git", "commit", "-m", commit_msg], cwd=PROJECT_DIR, check=True)
 
         res_push = subprocess.run(["git", "push", "origin", "main"], cwd=PROJECT_DIR, capture_output=True, text=True)
@@ -490,9 +527,9 @@ def main():
 
     print(f"📊 Loaded {len(lines)} total video entries from {channel_name}.")
 
-    extracted_items = []
-    seen_websites = set()
-    category_counts = defaultdict(int)
+    # --- Consolidated Website Grouping by URL ---
+    # Each URL appears EXACTLY ONCE. All features and video references are merged!
+    websites_by_url = {}
 
     for line in lines:
         parts = line.split("|")
@@ -507,19 +544,58 @@ def main():
         else:
             continue
 
-        item = extract_website_info(raw_title, video_url, video_id, channel_name)
-        
-        # Deduplication key by website name & category (ZERO DUPLICATES)
-        dedup_key = (item["name"].lower().strip(), item["url"].lower().strip())
-        if dedup_key not in seen_websites:
-            seen_websites.add(dedup_key)
-            extracted_items.append(item)
-            category_counts[item["category"]] += 1
+        item = resolve_video_to_tool(raw_title, video_url, video_id, channel_name)
+        norm_url = item["url"].rstrip("/").lower()
 
-    print(f"✅ Extracted {len(extracted_items)} unique categorized websites/tools exclusively for {channel_name} (Zero Duplicates).")
+        if norm_url not in websites_by_url:
+            websites_by_url[norm_url] = {
+                "name": item["name"],
+                "url": item["url"],
+                "category": item["category"],
+                "capabilities": [item["capability"]],
+                "videos": [(item["video_title"], item["video_url"])]
+            }
+        else:
+            entry = websites_by_url[norm_url]
+            # Merge unique capability details
+            if item["capability"] not in entry["capabilities"]:
+                entry["capabilities"].append(item["capability"])
+            # Merge unique video references
+            if (item["video_title"], item["video_url"]) not in entry["videos"]:
+                entry["videos"].append((item["video_title"], item["video_url"]))
+
+    # Finalize consolidated items
+    consolidated_items = []
+    category_counts = defaultdict(int)
+
+    for norm_url, entry in websites_by_url.items():
+        total_vids = len(entry["videos"])
+        # Format description answering: "Is website se kya kya kar sakte hain hum"
+        unique_caps = [c for c in entry["capabilities"] if c.strip()]
+        if len(unique_caps) == 1:
+            desc = f"Is website se ye kar sakte hain: {unique_caps[0]}"
+        else:
+            # Combine up to 4 major capabilities cleanly
+            combined_caps = " • ".join(unique_caps[:4])
+            desc = f"Is website se ye sab kar sakte hain: {combined_caps}"
+        
+        if total_vids > 1:
+            desc += f" (Channel me kul {total_vids} alag-alag videos me featured)"
+
+        consolidated_items.append({
+            "name": entry["name"],
+            "url": entry["url"],
+            "category": entry["category"],
+            "description": desc,
+            "videos_count": total_vids,
+            "videos": entry["videos"]
+        })
+        category_counts[entry["category"]] += 1
+
+    print(f"✅ Consolidated into {len(consolidated_items)} UNIQUE websites (Zero repeats!).")
     print("\n📈 Category Breakdown:")
     for cat, count in sorted(category_counts.items(), key=lambda x: x[1], reverse=True):
-        print(f"  • {cat}: {count} tools")
+        print(f"  • {cat}: {count} unique websites")
 
     # Dedicated Channel Directory
     channel_dir = os.path.join(PROJECT_DIR, f"📁 {channel_name}")
@@ -535,7 +611,7 @@ def main():
     json_root_path = os.path.join(PROJECT_DIR, f"💾 {channel_name}_websites_database.json")
 
     # 1. Export to Excel (.xlsx) with OpenPyXL
-    print(f"\n📝 Generating Excel Master Sheet for {channel_name}...")
+    print(f"\n📝 Generating Consolidated Excel Master Sheet for {channel_name}...")
     wb = openpyxl.Workbook()
     ws = wb.active
     ws.title = f"{channel_name[:30]}"
@@ -550,11 +626,11 @@ def main():
 
     headers = [
         "Category",
-        "Website / Tool Name",
-        "Exact Official Website URL",
-        f"Key Function / Purpose ({channel_name})",
-        f"Source Video Title ({channel_name})",
-        "YouTube Video Link"
+        "Website Name",
+        "Exact Official Website Link",
+        "Consolidated Features (Is Website Se Ye Sab Kar Sakte Hain)",
+        "Videos Featured Count",
+        "Source Video Links"
     ]
     ws.append(headers)
 
@@ -566,16 +642,24 @@ def main():
         cell.border = thin_border
     ws.row_dimensions[1].height = 28
 
-    sorted_items = sorted(extracted_items, key=lambda x: (x["category"], x["name"]))
+    sorted_items = sorted(consolidated_items, key=lambda x: (x["category"], x["name"]))
 
     for row_idx, item in enumerate(sorted_items, 2):
+        # Format video references
+        vids = item["videos"]
+        first_video_url = vids[0][1] if vids else ""
+        if len(vids) == 1:
+            vid_ref_text = f"{vids[0][0]} ({vids[0][1]})"
+        else:
+            vid_ref_text = f"{len(vids)} videos (Primary: {vids[0][1]})"
+
         row_data = [
             item["category"],
             item["name"],
             item["url"],
             item["description"],
-            item["video_title"],
-            item["video_url"]
+            item["videos_count"],
+            vid_ref_text
         ]
         ws.append(row_data)
 
@@ -588,13 +672,14 @@ def main():
                 cell.fill = fill
             cell.alignment = Alignment(vertical="center")
 
-            if col_num in [3, 6]:
+            # Clickable link on column 3
+            if col_num == 3:
                 cell.font = link_font
                 cell.hyperlink = cell.value
 
-        ws.row_dimensions[row_idx].height = 22
+        ws.row_dimensions[row_idx].height = 24
 
-    column_widths = [26, 26, 35, 52, 42, 36]
+    column_widths = [26, 28, 36, 60, 20, 45]
     for i, width in enumerate(column_widths, 1):
         col_letter = get_column_letter(i)
         ws.column_dimensions[col_letter].width = width
@@ -615,15 +700,16 @@ def main():
     # 3. Export to Markdown Report
     print(f"📝 Generating Markdown Report for {channel_name}...")
     md_lines = [
-        f"# 🌐 {channel_name} - Exclusive Websites & AI Tools Directory\n",
+        f"# 🌐 {channel_name} - Consolidated Websites & AI Tools Directory\n",
         f"> **Channel Name**: {channel_name}  ",
         f"> **Channel Handle / URL**: {channel_handle}  ",
-        f"> **Total Unique Websites Identified**: {len(extracted_items)} tools (Zero Duplicates)  ",
+        f"> **Total Unique Consolidated Websites**: {len(consolidated_items)} websites (**Zero Repeated Websites!**)  ",
         f"> **Total Videos / Shorts Scanned**: {len(lines)} videos (Exclusively from {channel_name})  ",
+        f"> **Consolidation Standard**: Har website sirf **1 baar** aayegi. Uske saare use cases aur features ek hi jagah list hain.  ",
         f"> **Links Standard**: 100% Exact Official Website URLs (Zero Google Search Links)  ",
         f"> **Channel Isolation**: 100% Dedicated to {channel_name} (Zero content from other channels)  \n",
         "## 📊 Category Summary\n",
-        "| Category | Websites Count |",
+        "| Category | Unique Websites Count |",
         "| :--- | :---: |"
     ]
     for cat, count in sorted(category_counts.items(), key=lambda x: x[1], reverse=True):
@@ -637,12 +723,20 @@ def main():
 
     for cat in sorted(by_category.keys()):
         tools = by_category[cat]
-        md_lines.append(f"### {cat} ({len(tools)} Tools)\n")
-        md_lines.append(f"| Website / Tool | Exact Official Link | Description ({channel_name}) | Video Reference |")
-        md_lines.append("| :--- | :--- | :--- | :--- |")
+        md_lines.append(f"### {cat} ({len(tools)} Unique Websites)\n")
+        md_lines.append(f"| Website Name | Official Website Link | Features & Use Cases (Is Website Se Ye Ye Kar Sakte Hain) | Videos Count | Video References |")
+        md_lines.append("| :--- | :--- | :--- | :---: | :--- |")
         for t in tools:
             clean_desc = t["description"].replace("|", "-")
-            md_lines.append(f"| **{t['name']}** | [{t['url']}]({t['url']}) | {clean_desc} | [Watch Video]({t['video_url']}) |")
+            # Build clean clickable video links
+            v_refs = []
+            for v_idx, (v_title, v_url) in enumerate(t["videos"][:3], 1):
+                v_refs.append(f"[{clean_title(v_title)[:25]}...]({v_url})")
+            if len(t["videos"]) > 3:
+                v_refs.append(f"*(+{len(t['videos'])-3} more)*")
+            video_ref_str = " • ".join(v_refs)
+
+            md_lines.append(f"| **{t['name']}** | [{t['url']}]({t['url']}) | {clean_desc} | **{t['videos_count']}** | {video_ref_str} |")
         md_lines.append("\n")
 
     md_content = "\n".join(md_lines)
@@ -654,10 +748,10 @@ def main():
     print(f"💾 Markdown report saved in channel folder: {markdown_dir_path}")
 
     # 4. Auto-Sync to GitHub
-    sync_to_github(channel_name, len(extracted_items))
+    sync_to_github(channel_name, len(consolidated_items))
 
     print("\n" + "=" * 60)
-    print("🎉 All extraction, categorization & GitHub sync tasks completed successfully!")
+    print("🎉 All extraction, consolidation & GitHub sync tasks completed successfully!")
     print("🔗 GitHub Repo: https://github.com/Satyenderparihar/Websites-Scrapers")
     print("=" * 60)
 
