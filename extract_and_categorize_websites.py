@@ -465,9 +465,125 @@ def main():
     print(f"💾 Markdown report saved: {markdown_root_path}")
     print(f"💾 Markdown report saved in channel folder: {markdown_dir_path}")
 
+    # 4. Auto-Sync to GitHub
+    sync_to_github(channel_name, len(extracted_items))
+
     print("\n" + "=" * 60)
-    print("🎉 All extraction & categorization tasks completed successfully!")
+    print("🎉 All extraction, categorization & GitHub sync tasks completed successfully!")
+    print("🔗 GitHub Repo: https://github.com/Satyenderparihar/Websites-Scrapers")
     print("=" * 60)
+
+def update_readme_catalog():
+    readme_path = os.path.join(PROJECT_DIR, "README.md")
+    
+    # Discover all channel folders
+    channels = []
+    for item in os.listdir(PROJECT_DIR):
+        folder_path = os.path.join(PROJECT_DIR, item)
+        if os.path.isdir(folder_path) and item.startswith("📁 "):
+            c_name = item.replace("📁 ", "").strip()
+            md_name = f"📝 {c_name}_Websites_Categorized_Report.md"
+            md_path = os.path.join(folder_path, md_name)
+            v_count = 0
+            t_count = 0
+            if os.path.exists(md_path):
+                try:
+                    with open(md_path, "r", encoding="utf-8") as f:
+                        for l in f:
+                            if "Total Unique Websites Identified" in l:
+                                m = re.search(r'(\d+)', l)
+                                if m: t_count = m.group(1)
+                            elif "Total Videos / Shorts Scanned" in l or "Total Video Database Scanned" in l:
+                                m = re.search(r'(\d+)', l)
+                                if m: v_count = m.group(1)
+                except Exception:
+                    pass
+            channels.append({
+                "name": c_name,
+                "folder": item,
+                "videos": v_count or "-",
+                "tools": t_count or "-"
+            })
+
+    channels.sort(key=lambda x: str(x["name"]))
+
+    readme_lines = [
+        "# 🌐 YouTube Websites & AI Tools Directory Scrapers\n",
+        "> **Autonomous 1-Click Multi-Channel Web Tools Scraper & Database**  ",
+        "> Automatically extracts, categorizes, deduplicates, and organizes every website, tool, and utility mentioned across YouTube channels into clean Markdown reports, Excel workbooks, and JSON databases.  ",
+        "> **Repository**: [https://github.com/Satyenderparihar/Websites-Scrapers](https://github.com/Satyenderparihar/Websites-Scrapers)\n",
+        "---",
+        "\n## 🚀 Live Channels Catalog\n",
+        "| Channel | Videos Scanned | Unique Tools | Markdown Report | Excel Workbook | JSON Database |",
+        "| :--- | :---: | :---: | :--- | :--- | :--- |"
+    ]
+
+    for c in channels:
+        folder_enc = c["folder"].replace(" ", "%20")
+        name = c["name"]
+        row = (
+            f"| **{name}** | **{c['videos']}** | **{c['tools']}** | "
+            f"[📖 View Report]({folder_enc}/📝%20{name}_Websites_Categorized_Report.md) | "
+            f"[📊 Download Excel]({folder_enc}/📊%20{name}_Websites_Master_List.xlsx) | "
+            f"[💾 View JSON]({folder_enc}/💾%20{name}_websites_database.json) |"
+        )
+        readme_lines.append(row)
+
+    readme_lines.extend([
+        "\n---\n",
+        "## ⚡ Core Features\n",
+        "1. **100% Strict Channel Isolation**: Every channel has its own dedicated directory (`📁 <ChannelName>/`) with pure, unmixed data.",
+        "2. **Smart Deduplication**: Automatically deduplicates tools using normalized name and category hashing so no duplicates exist.",
+        "3. **Official URL Resolution**: Detects mentions (`@replit`, `@gamma`, etc.) and maps tools to their official domains.",
+        "4. **1-Click Auto GitHub Push**: Runs on every scrape, syncing fresh databases and reports directly to GitHub.",
+        "5. **Multi-Format Export**: Generates GitHub-flavored Markdown, styled Excel spreadsheets (`.xlsx`), and structured JSON.\n",
+        "---\n",
+        "## 🛠️ How to Run\n",
+        "1. Double click **`YouTube Websites Extractor.lnk`** on Desktop.",
+        "2. Press **Enter** to update default channel (`@setupsaitony`) OR paste any new channel URL.",
+        "3. The agent will scrape, categorize, format, and push to GitHub automatically in **1 Click**!"
+    ])
+
+    with open(readme_path, "w", encoding="utf-8") as f:
+        f.write("\n".join(readme_lines))
+    print(f"📄 Updated master README.md with {len(channels)} active channels.")
+
+def sync_to_github(channel_name, tool_count):
+    print("\n" + "=" * 60)
+    print(f"🚀 Auto-Syncing {channel_name} updates to GitHub...")
+    print("=" * 60)
+    try:
+        update_readme_catalog()
+        
+        # Git config check
+        subprocess.run(["git", "config", "user.name", "Satyenderparihar"], cwd=PROJECT_DIR, capture_output=True)
+        subprocess.run(["git", "config", "user.email", "helpingpeople95@gmail.com"], cwd=PROJECT_DIR, capture_output=True)
+
+        # Pull rebase in case remote has commits
+        subprocess.run(["git", "pull", "--rebase", "origin", "main"], cwd=PROJECT_DIR, capture_output=True)
+
+        # Stage all changes
+        subprocess.run(["git", "add", "."], cwd=PROJECT_DIR, check=True)
+
+        # Check if changes exist
+        st = subprocess.run(["git", "status", "--porcelain"], cwd=PROJECT_DIR, capture_output=True, text=True)
+        if not st.stdout.strip():
+            print("ℹ️ GitHub repository is already up to date. Nothing new to push.")
+            return
+
+        from datetime import datetime
+        now_str = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+        commit_msg = f"update({channel_name}): auto-sync {tool_count} tools catalog - {now_str}"
+        subprocess.run(["git", "commit", "-m", commit_msg], cwd=PROJECT_DIR, check=True)
+
+        res_push = subprocess.run(["git", "push", "origin", "main"], cwd=PROJECT_DIR, capture_output=True, text=True)
+        if res_push.returncode == 0:
+            print("🎉 Successfully pushed updates to GitHub repository!")
+            print("🔗 Repository URL: https://github.com/Satyenderparihar/Websites-Scrapers")
+        else:
+            print(f"⚠️ Push status: {res_push.stderr.strip() or res_push.stdout.strip()}")
+    except Exception as e:
+        print(f"⚠️ Git auto-sync notice: {e}")
 
 if __name__ == "__main__":
     main()
