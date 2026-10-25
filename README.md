@@ -14,7 +14,7 @@
 | **SetupsAI** | **938** | **89** | [📖 View Report](📁%20SetupsAI/📝%20SetupsAI_Websites_Categorized_Report.md) | [📊 Download Excel](📁%20SetupsAI/📊%20SetupsAI_Websites_Master_List.xlsx) | [💾 View JSON](📁%20SetupsAI/💾%20SetupsAI_websites_database.json) |
 | **StudyTools** | **387** | **22** | [📖 View Report](📁%20StudyTools/📝%20StudyTools_Websites_Categorized_Report.md) | [📊 Download Excel](📁%20StudyTools/📊%20StudyTools_Websites_Master_List.xlsx) | [💾 View JSON](📁%20StudyTools/💾%20StudyTools_websites_database.json) |
 | **TechBytes** | **680** | **19** | [📖 View Report](📁%20TechBytes/📝%20TechBytes_Websites_Categorized_Report.md) | [📊 Download Excel](📁%20TechBytes/📊%20TechBytes_Websites_Master_List.xlsx) | [💾 View JSON](📁%20TechBytes/💾%20TechBytes_websites_database.json) |
-| **TrickPilot** | **264** | **229** | [📖 View Report](📁%20TrickPilot/📝%20TrickPilot_Websites_Categorized_Report.md) | [📊 Download Excel](📁%20TrickPilot/📊%20TrickPilot_Websites_Master_List.xlsx) | [💾 View JSON](📁%20TrickPilot/💾%20TrickPilot_websites_database.json) |
+| **TrickPilot** | **264** | **28** | [📖 View Report](📁%20TrickPilot/📝%20TrickPilot_Websites_Categorized_Report.md) | [📊 Download Excel](📁%20TrickPilot/📊%20TrickPilot_Websites_Master_List.xlsx) | [💾 View JSON](📁%20TrickPilot/💾%20TrickPilot_websites_database.json) |
 
 ---
 
