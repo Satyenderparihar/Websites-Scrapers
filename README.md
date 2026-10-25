@@ -10,7 +10,7 @@
 
 | Channel | Videos Scanned | Unique Websites | Markdown Report | Excel Workbook | JSON Database |
 | :--- | :---: | :---: | :--- | :--- | :--- |
-| **PushpendraSinghAITech** | **324** | **7** | [📖 View Report](📁%20PushpendraSinghAITech/📝%20PushpendraSinghAITech_Websites_Categorized_Report.md) | [📊 Download Excel](📁%20PushpendraSinghAITech/📊%20PushpendraSinghAITech_Websites_Master_List.xlsx) | [💾 View JSON](📁%20PushpendraSinghAITech/💾%20PushpendraSinghAITech_websites_database.json) |
+| **PushpendraSinghAITech** | **324** | **12** | [📖 View Report](📁%20PushpendraSinghAITech/📝%20PushpendraSinghAITech_Websites_Categorized_Report.md) | [📊 Download Excel](📁%20PushpendraSinghAITech/📊%20PushpendraSinghAITech_Websites_Master_List.xlsx) | [💾 View JSON](📁%20PushpendraSinghAITech/💾%20PushpendraSinghAITech_websites_database.json) |
 | **SetupsAI** | **938** | **89** | [📖 View Report](📁%20SetupsAI/📝%20SetupsAI_Websites_Categorized_Report.md) | [📊 Download Excel](📁%20SetupsAI/📊%20SetupsAI_Websites_Master_List.xlsx) | [💾 View JSON](📁%20SetupsAI/💾%20SetupsAI_websites_database.json) |
 | **StudyTools** | **387** | **22** | [📖 View Report](📁%20StudyTools/📝%20StudyTools_Websites_Categorized_Report.md) | [📊 Download Excel](📁%20StudyTools/📊%20StudyTools_Websites_Master_List.xlsx) | [💾 View JSON](📁%20StudyTools/💾%20StudyTools_websites_database.json) |
 | **TechBytes** | **680** | **19** | [📖 View Report](📁%20TechBytes/📝%20TechBytes_Websites_Categorized_Report.md) | [📊 Download Excel](📁%20TechBytes/📊%20TechBytes_Websites_Master_List.xlsx) | [💾 View JSON](📁%20TechBytes/💾%20TechBytes_websites_database.json) |
