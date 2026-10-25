@@ -1,0 +1,11 @@
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.log
+*.tmp
+
+# Temporary batch/powershell scratch
+test_run.bat
+check_lnk.ps1
+inspect_lnk.ps1
