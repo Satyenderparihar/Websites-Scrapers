@@ -877,7 +877,13 @@ def build_master_all_channels_directory():
     channel_stats = {}
     total_scanned_videos = 0
 
-    channel_folders = [d for d in os.listdir(PROJECT_DIR) if os.path.isdir(os.path.join(PROJECT_DIR, d)) and d.startswith("📁 ")]
+    channel_folders = [
+        d for d in os.listdir(PROJECT_DIR) 
+        if os.path.isdir(os.path.join(PROJECT_DIR, d)) 
+        and d.startswith("📁 ") 
+        and not d.startswith("📁 All_Channels") 
+        and not d.startswith("📁 YouTube_Channel")
+    ]
 
     for folder_name in channel_folders:
         ch = folder_name.replace("📁 ", "").strip()
@@ -997,10 +1003,18 @@ def build_master_all_channels_directory():
         md_lines.append("\n")
 
     master_md_content = "\n".join(md_lines)
-    master_md_path = os.path.join(PROJECT_DIR, "📝 All_Channels_Websites_Master_Categorized_Report.md")
-    with open(master_md_path, "w", encoding="utf-8") as f:
+    
+    # Dedicated Folder for Master All-Channels Directory
+    master_dir = os.path.join(PROJECT_DIR, "📁 All_Channels_Master_Directory")
+    os.makedirs(master_dir, exist_ok=True)
+
+    master_md_dir_path = os.path.join(master_dir, "📝 All_Channels_Websites_Master_Categorized_Report.md")
+    master_md_root_path = os.path.join(PROJECT_DIR, "📝 All_Channels_Websites_Master_Categorized_Report.md")
+    with open(master_md_dir_path, "w", encoding="utf-8") as f:
         f.write(master_md_content)
-    print(f"💾 Master All-Channels Markdown saved: {master_md_path}")
+    with open(master_md_root_path, "w", encoding="utf-8") as f:
+        f.write(master_md_content)
+    print(f"💾 Master All-Channels Markdown saved: {master_md_dir_path}")
 
     # 2. Master Excel Workbook
     wb = openpyxl.Workbook()
@@ -1096,15 +1110,20 @@ def build_master_all_channels_directory():
     ws_summary.column_dimensions['B'].width = 24
     ws_summary.column_dimensions['C'].width = 28
 
-    master_excel_path = os.path.join(PROJECT_DIR, "📊 All_Channels_Websites_Master_List.xlsx")
-    wb.save(master_excel_path)
-    print(f"💾 Master All-Channels Excel saved: {master_excel_path}")
+    master_excel_dir_path = os.path.join(master_dir, "📊 All_Channels_Websites_Master_List.xlsx")
+    master_excel_root_path = os.path.join(PROJECT_DIR, "📊 All_Channels_Websites_Master_List.xlsx")
+    wb.save(master_excel_dir_path)
+    wb.save(master_excel_root_path)
+    print(f"💾 Master All-Channels Excel saved: {master_excel_dir_path}")
 
     # 3. Master JSON Database
-    master_json_path = os.path.join(PROJECT_DIR, "💾 all_channels_websites_database.json")
-    with open(master_json_path, "w", encoding="utf-8") as jf:
+    master_json_dir_path = os.path.join(master_dir, "💾 all_channels_websites_database.json")
+    master_json_root_path = os.path.join(PROJECT_DIR, "💾 all_channels_websites_database.json")
+    with open(master_json_dir_path, "w", encoding="utf-8") as jf:
         json.dump(sorted_websites, jf, ensure_ascii=False, indent=2)
-    print(f"💾 Master All-Channels JSON saved: {master_json_path}")
+    with open(master_json_root_path, "w", encoding="utf-8") as jf:
+        json.dump(sorted_websites, jf, ensure_ascii=False, indent=2)
+    print(f"💾 Master All-Channels JSON saved: {master_json_dir_path}")
 
     return len(all_websites), total_scanned_videos
 
@@ -1113,7 +1132,10 @@ def update_readme_catalog():
     channels = []
     for item in os.listdir(PROJECT_DIR):
         folder_path = os.path.join(PROJECT_DIR, item)
-        if os.path.isdir(folder_path) and item.startswith("📁 "):
+        if (os.path.isdir(folder_path) 
+            and item.startswith("📁 ") 
+            and not item.startswith("📁 All_Channels") 
+            and not item.startswith("📁 YouTube_Channel")):
             c_name = item.replace("📁 ", "").strip()
             md_name = f"📝 {c_name}_Websites_Categorized_Report.md"
             md_path = os.path.join(folder_path, md_name)
@@ -1147,14 +1169,14 @@ def update_readme_catalog():
         "> Automatically extracts, categorizes, deduplicates, and consolidates every website and AI tool mentioned across YouTube channels into clean Markdown reports, Excel workbooks, and JSON databases.  ",
         "> **GitHub Repository**: [https://github.com/Satyenderparihar/Websites-Scrapers](https://github.com/Satyenderparihar/Websites-Scrapers)\n",
         "---",
-        "\n## 🌟 All-in-One Master Consolidated Directory (All Channels in One File)\n",
-        "> **Ek hi file me sabhi channels ka pura categorized data (Zero Repeats)**:  ",
-        "> - 📖 **[View Master Categorized Report (Markdown)](📝%20All_Channels_Websites_Master_Categorized_Report.md)**  ",
-        "> - 📊 **[Download Master Multi-Sheet Excel Workbook](📊%20All_Channels_Websites_Master_List.xlsx)**  ",
-        "> - 💾 **[View Master JSON Database](💾%20all_channels_websites_database.json)**  ",
+        "\n## 🌟 All-in-One Master Consolidated Directory (Dedicated Folder: `📁 All_Channels_Master_Directory`)\n",
+        "> **Ek hi jagah sabhi channels ka pura categorized data (Zero Repeats)**:  ",
+        "> - 📖 **[View Master Categorized Report (Markdown)](📁%20All_Channels_Master_Directory/📝%20All_Channels_Websites_Master_Categorized_Report.md)**  ",
+        "> - 📊 **[Download Master Multi-Sheet Excel Workbook](📁%20All_Channels_Master_Directory/📊%20All_Channels_Websites_Master_List.xlsx)**  ",
+        "> - 💾 **[View Master JSON Database](📁%20All_Channels_Master_Directory/💾%20all_channels_websites_database.json)**  ",
         "\n---",
         "\n## 🚀 Individual Channels Catalog\n",
-        "| Channel | Videos Scanned | Unique Websites | Markdown Report | Excel Workbook | JSON Database |",
+        "| Channel | Videos Scanned | Unique Websites | Dedicated Report | Dedicated Excel | Dedicated JSON |",
         "| :--- | :---: | :---: | :--- | :--- | :--- |"
     ]
 
@@ -1173,16 +1195,16 @@ def update_readme_catalog():
         "\n---\n",
         "## ⚡ Core Features\n",
         "1. **Consolidated Website Directory (Zero Repeats)**: Each website appears exactly ONCE. If a website was featured in multiple videos (e.g. TinyWow, Gamma), all its use cases and features are merged into its comprehensive description.\n",
-        "2. **All-in-One Master Directory**: Single file (`📝 All_Channels_Websites_Master_Categorized_Report.md`) bringing all channels together in one categorized view.\n",
+        "2. **All-in-One Master Directory**: Dedicated directory (`📁 All_Channels_Master_Directory/`) bringing all channels together in one categorized view.\n",
         "3. **Exact Official Website URLs**: Every tool is linked directly to its authentic official domain. Zero Google search links.\n",
         "4. **100% Strict Channel Isolation**: Every channel has its own dedicated directory (`📁 <ChannelName>/`) with pure, unmixed data.\n",
         "5. **1-Click Auto GitHub Push**: Runs on every scrape, syncing fresh databases and reports directly to GitHub.\n",
         "6. **Multi-Format Export**: Generates GitHub-flavored Markdown, styled Excel spreadsheets (`.xlsx`), and structured JSON.\n",
         "---\n",
-        "## 🛠️ How to Run\n",
-        "1. Double click **`YouTube Websites Extractor.lnk`** on Desktop to run the Agent.\n",
-        "2. Double click **`All Channels Websites Master Directory.lnk`** on Desktop to view all websites across all channels in 1 click!\n",
-        "3. Press **Enter** to update default channel (`@setupsaitony`) OR paste any new channel URL."
+        "## 🛠️ How to Run (1-Click Unified Hub)\n",
+        "1. Double click **`YouTube Websites Master Hub.lnk`** on Desktop.\n",
+        "2. Press **Enter** to auto-update default channel (`@setupsaitony`) OR paste any new channel URL.\n",
+        "3. The agent will scrape, categorize, consolidate, update the master directory, and push to GitHub automatically in **1 Click**!"
     ])
 
     with open(readme_path, "w", encoding="utf-8") as f:

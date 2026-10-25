@@ -9,24 +9,29 @@ project_dir = r"D:\Antigravity - Agent\🌐 YouTube Websites Extractor Agent"
 
 shell = win32com.client.Dispatch("WScript.Shell")
 
-# 1. Launcher Shortcut (Runs Extractor Agent)
-lnk1_path = os.path.join(desktop_dir, "YouTube Websites Extractor.lnk")
-sc1 = shell.CreateShortcut(lnk1_path)
-sc1.TargetPath = "powershell.exe"
-sc1.Arguments = f"-NoExit -NoProfile -ExecutionPolicy Bypass -Command \"& {{ Set-Location -LiteralPath '{project_dir}'; .\\run_agent.bat }}\""
-sc1.WorkingDirectory = "D:\\Antigravity - Agent"
-sc1.Description = "1-Click Autonomous YouTube Websites Extractor Agent"
-sc1.IconLocation = "shell32.dll,13"
-sc1.Save()
-print(f"✅ Created Desktop Shortcut 1: {lnk1_path}")
+# The Single Unified 1-Click Master Hub Launcher
+unified_target = "powershell.exe"
+unified_args = f"-NoExit -NoProfile -ExecutionPolicy Bypass -Command \"& {{ Set-Location -LiteralPath '{project_dir}'; .\\run_agent.bat }}\""
 
-# 2. Master Directory Viewer Shortcut (1-Click View All Channels Master Report)
-lnk2_path = os.path.join(desktop_dir, "All Channels Websites Master Directory.lnk")
-sc2 = shell.CreateShortcut(lnk2_path)
-sc2.TargetPath = "powershell.exe"
-sc2.Arguments = f"-NoProfile -ExecutionPolicy Bypass -Command \"& {{ Set-Location -LiteralPath '{project_dir}'; .\\view_all_directory.bat }}\""
-sc2.WorkingDirectory = "D:\\Antigravity - Agent"
-sc2.Description = "1-Click Open All Channels Websites Master Directory (Markdown Report)"
-sc2.IconLocation = "shell32.dll,23"
-sc2.Save()
-print(f"✅ Created Desktop Shortcut 2: {lnk2_path}")
+# Primary Master Hub Shortcut
+hub_lnk = os.path.join(desktop_dir, "YouTube Websites Master Hub.lnk")
+sc_hub = shell.CreateShortcut(hub_lnk)
+sc_hub.TargetPath = unified_target
+sc_hub.Arguments = unified_args
+sc_hub.WorkingDirectory = "D:\\Antigravity - Agent"
+sc_hub.Description = "1-Click YouTube Websites Master Hub (Scrape, Consolidate & View Master Directory)"
+sc_hub.IconLocation = "shell32.dll,13"
+sc_hub.Save()
+print(f"✅ Created Primary Master Hub Shortcut: {hub_lnk}")
+
+# Update existing shortcuts so user can never click the wrong one
+for alias_name in ["YouTube Websites Extractor.lnk", "All Channels Websites Master Directory.lnk"]:
+    alias_path = os.path.join(desktop_dir, alias_name)
+    sc = shell.CreateShortcut(alias_path)
+    sc.TargetPath = unified_target
+    sc.Arguments = unified_args
+    sc.WorkingDirectory = "D:\\Antigravity - Agent"
+    sc.Description = "1-Click YouTube Websites Master Hub"
+    sc.IconLocation = "shell32.dll,13"
+    sc.Save()
+    print(f"✅ Synced Shortcut: {alias_path}")

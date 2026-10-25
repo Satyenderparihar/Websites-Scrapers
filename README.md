@@ -6,18 +6,18 @@
 
 ---
 
-## 🌟 All-in-One Master Consolidated Directory (All Channels in One File)
+## 🌟 All-in-One Master Consolidated Directory (Dedicated Folder: `📁 All_Channels_Master_Directory`)
 
-> **Ek hi file me sabhi channels ka pura categorized data (Zero Repeats)**:  
-> - 📖 **[View Master Categorized Report (Markdown)](📝%20All_Channels_Websites_Master_Categorized_Report.md)**  
-> - 📊 **[Download Master Multi-Sheet Excel Workbook](📊%20All_Channels_Websites_Master_List.xlsx)**  
-> - 💾 **[View Master JSON Database](💾%20all_channels_websites_database.json)**  
+> **Ek hi jagah sabhi channels ka pura categorized data (Zero Repeats)**:  
+> - 📖 **[View Master Categorized Report (Markdown)](📁%20All_Channels_Master_Directory/📝%20All_Channels_Websites_Master_Categorized_Report.md)**  
+> - 📊 **[Download Master Multi-Sheet Excel Workbook](📁%20All_Channels_Master_Directory/📊%20All_Channels_Websites_Master_List.xlsx)**  
+> - 💾 **[View Master JSON Database](📁%20All_Channels_Master_Directory/💾%20all_channels_websites_database.json)**  
 
 ---
 
 ## 🚀 Individual Channels Catalog
 
-| Channel | Videos Scanned | Unique Websites | Markdown Report | Excel Workbook | JSON Database |
+| Channel | Videos Scanned | Unique Websites | Dedicated Report | Dedicated Excel | Dedicated JSON |
 | :--- | :---: | :---: | :--- | :--- | :--- |
 | **PushpendraSinghAITech** | **324** | **12** | [📖 View Report](📁%20PushpendraSinghAITech/📝%20PushpendraSinghAITech_Websites_Categorized_Report.md) | [📊 Download Excel](📁%20PushpendraSinghAITech/📊%20PushpendraSinghAITech_Websites_Master_List.xlsx) | [💾 View JSON](📁%20PushpendraSinghAITech/💾%20PushpendraSinghAITech_websites_database.json) |
 | **SetupsAI** | **938** | **89** | [📖 View Report](📁%20SetupsAI/📝%20SetupsAI_Websites_Categorized_Report.md) | [📊 Download Excel](📁%20SetupsAI/📊%20SetupsAI_Websites_Master_List.xlsx) | [💾 View JSON](📁%20SetupsAI/💾%20SetupsAI_websites_database.json) |
@@ -31,7 +31,7 @@
 
 1. **Consolidated Website Directory (Zero Repeats)**: Each website appears exactly ONCE. If a website was featured in multiple videos (e.g. TinyWow, Gamma), all its use cases and features are merged into its comprehensive description.
 
-2. **All-in-One Master Directory**: Single file (`📝 All_Channels_Websites_Master_Categorized_Report.md`) bringing all channels together in one categorized view.
+2. **All-in-One Master Directory**: Dedicated directory (`📁 All_Channels_Master_Directory/`) bringing all channels together in one categorized view.
 
 3. **Exact Official Website URLs**: Every tool is linked directly to its authentic official domain. Zero Google search links.
 
@@ -43,10 +43,10 @@
 
 ---
 
-## 🛠️ How to Run
+## 🛠️ How to Run (1-Click Unified Hub)
 
-1. Double click **`YouTube Websites Extractor.lnk`** on Desktop to run the Agent.
+1. Double click **`YouTube Websites Master Hub.lnk`** on Desktop.
 
-2. Double click **`All Channels Websites Master Directory.lnk`** on Desktop to view all websites across all channels in 1 click!
+2. Press **Enter** to auto-update default channel (`@setupsaitony`) OR paste any new channel URL.
 
-3. Press **Enter** to update default channel (`@setupsaitony`) OR paste any new channel URL.
+3. The agent will scrape, categorize, consolidate, update the master directory, and push to GitHub automatically in **1 Click**!
